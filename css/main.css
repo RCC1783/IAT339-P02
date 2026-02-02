@@ -1,0 +1,764 @@
+/* IAT339 */
+/* Roan Clifford */
+:root{
+    --colour1: #561013;
+    --colour2: #E07F00;
+    --colour3: #002A32;
+    --colour4: #7E3A76;
+
+    background-color: #f4f3f0;
+}
+
+body {
+    font-family:'Arima','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1.5rem;
+    max-width: 100%;
+    /* background-color: #F5F3EF; */
+}
+
+/* ///      Font Styles (I probably should be using these more...)     ////*/
+.arima-regular {
+  font-family: "Arima", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+.daruma-regular {
+  font-family: "Darumadrop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+
+.barrio-regular {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+/* ///      Header Styles     ////*/
+h1{
+    font-family: "Barrio";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h2{
+    font-family: "Darumadrop One";
+    font-size: 2.4rem;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+h3{
+    font-family: "Arima";
+    font-weight: 800;
+    font-size: 1.75rem;
+
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+h4{
+    font-size: 1.25rem;
+    font-weight: 650;
+
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+}
+
+/* ///      Code Boxes     ////*/
+code{
+    font-size: 0.85rem; 
+    max-width: fit-content;
+    color: #4b4b4b;
+}
+
+/* ///      Fit text to page     ////*/
+p, ol, ul{
+    max-width: 90%;
+    margin: 0;
+}
+
+/* ///      Default/in-text link     ////*/
+a {
+    color: var(--colour4);
+    text-decoration: none;
+    font-weight: 550;
+    transition: color 0.25s;
+}
+
+/* In class demo (CSS Basics Completed) */
+a:hover, a:focus, a:active {
+    color: var(--colour2);
+}
+
+/* In class demo (CSS Basics Completed) */
+.img-link:hover, .img-link:focus{
+    border: 3px solid purple
+}
+
+label{
+    margin-right: 0.5rem;
+    margin-left: 1.5rem;
+    font-weight: 550;
+    align-self: center;
+}
+input{
+    border: 2px solid var(--colour3);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 0;
+
+    transition: border-color 0.25s, border-width 0.25s;
+}
+
+
+input:hover, input:focus, input:active{
+    border-color: var(--colour4);
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Arima";
+    font-weight: 600;
+    font-size: .9rem;
+    padding: 0.5rem;
+    margin-left: .5rem;
+
+    background-color: white;
+    transition: background-color 0.25s, color 0.2s;
+}
+
+button:hover{
+    background-color: var(--colour4);
+    color: white;
+}
+
+/* ///      Colour Pallete Display     ////*/
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.colour_pallete_box{
+    display: flex;
+}
+.col_1{
+    background-color: var(--colour1);
+}
+.col_2{
+    background-color: var(--colour2);
+}
+.col_3{
+    background-color: var(--colour3);
+}
+.col_4{
+    background-color: var(--colour4);
+    margin-left: 1rem;
+}
+
+/* ///      Glow on Hover     ////*/
+.glow_on_hover{
+    filter:none;
+    transition: filter 0.3s;
+}
+.glow_on_hover:hover, .glow_on_hover:active, .glow_on_hover:focus{
+    filter: drop-shadow(0 0 0.5rem var(--colour2));
+}
+
+/* /////////////////////////////////////////////// */
+/* ///           Combined Elements             /// */
+/* /////////////////////////////////////////////// */
+
+/* ///      Shop Header     ////*/
+.nav_header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    height: fit-content;
+    padding: 1rem 0 1rem 0;
+}
+
+.nav_header .expander{
+    flex-grow: 2;
+    min-width: 1rem;
+}
+
+.store_logotype{
+    font-family: "Barrio";
+    font-weight: 500;
+    font-size: 2.25rem;
+    color: var(--colour2);
+    margin-right: 2rem;
+}
+.store_logotype:hover{
+    color: var(--colour4);
+}
+
+.search-bar{
+    margin: 1rem;
+    min-width: 361px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar input{
+    box-sizing: border-box;
+    margin: 0;
+    flex-grow: 1;
+    max-width: 260px;
+    height: 25px;
+
+    border-radius: 10px;
+    text-align: center;
+    border: solid 2px var(--colour3);
+
+    transition: border 0.25s;
+}
+.search-bar input:hover, search-bar input:active, search-bar input:focus{
+    border: solid 2px var(--colour4);
+}
+
+.search-bar_button{
+    /* box-sizing: border-box; */
+    background-color: #002A32;
+    border: none;
+    /* width: 30px; */
+    height: 25px;
+    color: white;
+    border-radius: 10px;
+    padding: 0 1rem;
+
+    transition: background-color 0.5s, color 0.4s;
+}
+
+.header_links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.nav_button{
+    margin: 0 1.875rem;
+    color: var(--colour3);
+    font-weight: 650;
+}
+.nav_button:hover, nav_button:focus{
+    color: var(--colour4);
+}
+
+
+
+/* ///      Individual Product Listing     ////*/
+.product_listing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    width: 11.25rem;
+    max-height: 14.7rem;
+    margin: 5px;
+
+    border-width: 0;
+
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+    transition: all 0.15s;
+}
+
+.product_display{
+    position: relative;
+    max-width: 100%;
+    height: 200px;
+
+    border-radius: 5px;
+    
+}
+.product_display img{
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product_info{
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    margin: 0.25rem 5px 0 5px;
+
+    color: #000;
+    min-height: 3.125rem;
+}
+
+.product_name{
+    font-weight: 650;
+    flex: 2;
+    text-align: left;
+    margin: 0 1rem 0 0;
+}
+.product_price{
+    text-align: right;
+    font-weight: 500;
+    margin: 0;
+}
+
+.stock_notif{
+    /* To center this: https://www.w3schools.com/howto/howto_css_image_text.asp */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+
+    /* If out of stock display: block. Otherwise, display: none*/
+    display: none;
+
+    background-color: var(--colour1);
+    color: white;
+}
+
+
+
+
+/* ///      Payment Form     ////*/
+.payment_form{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    border: solid 2px var(--colour3);
+    max-width: 40rem;
+    min-width: 30rem;
+
+    margin: auto 0;
+
+    display: flex;
+    flex-direction: column;
+}
+.payment_form form{
+    margin: 1rem;
+}
+
+.cardholder{
+    max-width: 100%;
+    min-width: 0;
+    border-radius: 0;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.cardholder input{
+    flex-grow: 1;
+    min-width: 1px;
+    font-size: 1rem;
+}
+.cardholder label{
+    max-width: 100%;
+    margin-left: 0;
+}
+.payment_type{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.payment_type label{
+    margin-left: 0;
+}
+.payment_type input{
+    margin-right: 0;
+}
+.spacer{
+    width: 25%;
+}
+
+.card_numbers_group{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card_numbers{
+    display: flex;
+}
+.crd_nmbr{
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.crd_nmbr label{
+    margin-left: 0;
+}
+
+.crd_nmbr input{
+    flex-grow: 1;
+    max-width: none;
+}
+
+.cvv input{
+    max-width: 5rem;
+}
+
+.card_expiration{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin-top: 1rem;
+}
+
+.card_expiration label{
+    margin: 0 0.3rem;
+}
+.card_expiration input{
+    max-width: 4rem;
+    text-align: center;
+}
+
+.submit_section{
+    background-color: var(--colour3);
+    padding: 1rem;
+    border-radius: 0;
+}
+.submit_section button{
+    min-width: 20%;
+}
+
+
+/* ///      Product Card in Checkout Cart     ////*/
+.cart_item{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 16rem;
+    align-content: center;
+    margin: 10px;
+
+    position: relative;
+
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.cart_item img{
+    width: 100%;
+    background-color: #898989;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart_item form{
+    display: flex;
+    flex:2;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0.5rem 5px 0 5px;
+    padding: 0;
+
+    align-items: flex-end;
+
+    border-radius: 0;
+}
+
+.cart_item form label{
+    flex: 2;
+    max-height: 1.5rem;
+}
+
+.cart_item form input{
+    max-width: 40%;
+    max-height: 1.5rem;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cart_display{
+    position: relative;
+    max-width: 100%;
+    height: 10rem;
+}
+
+.remove_from_cart_button{
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    
+    color: white;
+    background-color: var(--colour1);
+    border: none;
+    
+    font-family: "Darumadrop One";
+    font-size: 0.75rem;
+    text-align: center;
+
+    position: absolute;
+    top: 10px;
+    right:10px;
+
+    transition: filter 0.05s;
+}
+
+.remove_from_cart_button:hover{
+    border: solid 2px white;
+    background-color: var(--colour1);
+}
+
+
+/* ///      Checkout Cart (Container)     ////*/
+.checkout_cart{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px var(--colour3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart{
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem;
+    margin: 0;
+
+    background-color: var(--colour3);
+}
+
+.checkout_total{
+    background-color: var(--colour1);
+    border-top: solid 3px var(--colour2);
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: .5rem 2rem;
+
+    display: flex;
+
+    font-family: "Arima";
+    font-size: 1.5rem;
+
+    align-items: center;
+    filter: drop-shadow(0 0 0.75rem rgb(17, 16, 17));
+}
+
+.checkout_total_text{
+    display: flex;
+    flex: 2;
+    margin-right: 1rem;
+}
+
+.checkout_total_text p{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.checkout_total button{
+    height: 3rem;
+    width: 15rem;
+    margin: 0;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Arima";
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/*  //////////////////////////////////////////// */
+/*  /////   Page Layout Template Classes  ///// */
+/*  /////////////////////////////////////////// */
+
+#products_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    max-width: 59rem;
+
+    justify-content: center;
+}
+
+.two_col_right_dominant{
+    display: flex;
+    flex-direction: row;
+    max-width: 80rem;
+    margin: 2rem auto;
+}
+
+.two_col_right_dom_left_box{
+    flex-grow: 1;
+    min-width: 15rem;
+
+    margin-right: 1rem;
+}
+
+.two_col_right_dom_left_box p{
+    max-width: 90%;
+}
+
+.checkout_section{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+/* ///             Media Queries for responsiveness              /// */
+/* ///////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:910px){
+
+    .two_col_right_dominant{
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .two_col_right_dom_left_box{
+        text-align: center;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .two_col_right_dom_left_box p{
+        max-width: 100%;
+    }
+
+    .payment_form{
+        min-width: 0;
+    }
+
+    .card_numbers{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .nav_header .expander{
+        display: none;
+    }
+    .nav_header{
+        justify-content: center;
+    }
+    .search-bar{
+        max-width: 100%;
+        min-width: 0;
+        flex-grow: 1;
+        margin: 1rem 0;
+    }
+
+    .search-bar input{
+        flex-grow: 4;
+        min-width: 0;
+        max-width: none;
+        min-width: 0;
+    }
+    .search-bar_button{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .product_listing{
+        width: 8rem;
+        min-width: 2rem;
+
+        padding: 0.25rem;
+    }
+
+    .product_display{
+        height: 8rem;
+    }
+
+    .product_info{
+        flex-direction: column;
+
+        font-size: 0.75rem;
+    }
+
+    .product_name{
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .stock_notif{
+        font-size: 0.75rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p, a{
+        font-size: 0.85rem;
+    }
+
+    label{
+        font-size: 0.85rem;
+    }
+    input{
+        font-size: 0.85rem;
+    }
+
+    .checkout_total_text p{
+        font-size: 1.15rem;
+    }
+
+    .checkout_total button{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 485px){
+    .payment_type{
+        flex-direction: column;
+        align-items: center;
+    }
+    .payment_type .spacer{
+        display: none;
+    }
+
+    .card_numbers{
+        justify-content: center;
+    }
+
+    .crd_nmbr{
+        max-width: none;
+        flex-grow: 1;
+    }
+    .crd_nmbr input{
+        max-width: none;
+    }
+}
+@media screen and (max-width: 350px){
+    .card_expiration{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
