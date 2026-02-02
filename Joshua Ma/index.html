@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class = 'headerImg'>
+        <h1>P01 - Style Guide</h1>    
+        <img src = 'images/forging.png' alt = 'Blacksmith forging.'>
+      </div>
+      <nav class = 'headerNav'>        
+        <a href = "#interactive_elements">Interactive Elements</a>
+        <a href = "#text_elements">Text Elements</a>
+        <a href = "#combined_elements">Combined Elements</a>
+        <a href = "#citations">Citations</a>
+        <a href = "cart.html">Shopping Cart</a>
+        <a href = "shop.html">Shop/Product Page</a>
+      </nav>
+
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+          <p>Interested in a custom job? Click <a href = "#custom" target = "_blank">here</a> to see more info.</p>
+        <h4>Sample Code:</h4>
+          <code>&lt;p&gt;Interested in a custom job? Click &lt;a href = "#custom" target = "_blank"&gt;here&lt;/a&gt; to see more info.&lt;/p&gt;</code>
+      </section>
+      <!-- Pulled and Modified from my Week 1 Code -->
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h4>Navigation Link</h4>
+        <h4>CSS selector:</h4>
+        <p>.headerNav</p>
+
+          <nav class = 'headerNav'>
+            <a href = "#about">About</a>
+            <a href = "#custom">Custom Work</a>
+            <a href = "portfolio">Portfolio</a>
+            <a href = "Shop">Shop</a>
+            <a href = "#contact">Contact Us</a>
+          </nav>
+        <h4>Sample Code</h4>
+        <code>
+          &lt;nav&gt;
+            &lt;a href = "#about"&gt;About&lt;/a&gt;
+            &lt;a href = "#custom"&gt;Custom Work&lt;/a&gt;
+            &lt;a href = "portfolio"&gt;Portfolio&lt;/a&gt;
+            &lt;a href = "Shop"&gt;Shop&lt;/a&gt;
+            &lt;a href = "#contact"&gt;Contact Us&lt;/a&gt;
+          &lt;/nav&gt;
+        </code>
+
+        <h4>Default Button</h4>
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+      </section>
+      <!-- Pulled from Sample Code -->
+
+
+      <section class="element" id = "custom">
+        <h3>Submit/Reset Buttons</h3>
+        <h4>CSS selector:</h4>
+        <p>.subBtn</p>
+          <form class = 'subBtn'>
+            <input type = 'submit' value = 'Submit'>
+            <input type = 'reset' value = 'Reset'>
+          </form>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form&gt;
+            &lt;input type = 'submit' value = 'Submit'&gt;
+            &lt;input type = 'reset' value = 'Reset'&gt;
+          &lt;/form&gt;
+        </code>
+      </section>
+      <!-- Referenced from W3Schools -->
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>.textForm</p>
+          <form class = 'textForm'>
+            <label for = 'firstName'>First Name:</label>
+            <input type = 'text' id = 'firstName' name = 'firstName' placeholder = 'First Name'>
+            <label for = 'email'>Email:</label>
+            <input type = 'email' id = 'email' name = 'email' placeholder = 'Email'>
+          </form>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form&gt;
+            &lt;label for = 'firstName'&gt;First Name:&lt;/label&gt;
+            &lt;input type = 'text' id = 'firstName' name = 'firstName' placeholder = 'First Name'&gt;
+            &lt;label for = 'email'&gt;Email:&lt;/label&gt;
+            &lt;input type = 'email' id = 'email' name = 'email' placeholder = 'Email'&gt;
+          &lt;/form&gt;
+        </code>
+      </section>
+      <!-- Referenced from W3Schools, with a little from my old code in Week 1 -->
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>.radioForm</p>
+          <form class = 'radioForm'>
+            <label for = 'sharp'>Sharp</label>
+            <input type = 'radio' id = 'sharp' name = 'sharpness' value = 'Sharp'>
+            <label for = 'dull'>Dull</label>
+            <input type = 'radio' id = 'dull' name = 'sharpness' value = 'Dull'>
+          </form>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form&gt;
+            &lt;label for = 'sharp'&gt;Sharp&lt;/label&gt;
+            &lt;input type = 'radio' id = 'sharp' name = 'sharpness' value = 'Sharp'&gt;
+            &lt;label for = 'dull'&gt;Dull&lt;/label&gt;
+            &lt;input type = 'radio' id = 'dull' name = 'sharpness' value = 'Dull'&gt;
+          &lt;/form&gt;
+        </code>
+      </section>
+      <!-- Referenced from W3Schools -->
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+        <p>.img</p>
+          <a href = 'https://en.wikipedia.org/wiki/Claymore'>
+            <img src = 'https://damascussteelblades.com/cdn/shop/files/1_f8ce6367-726b-4ace-bea1-dac077432018.webp?v=1732746477' alt = 'Scottish Claymore' width = 250>
+          </a>
+        <h4>Sample Code</h4>
+          <code>
+          &lt;a href = 'https://en.wikipedia.org/wiki/Claymore'&gt;
+            &lt;img src = 'https://damascussteelblades.com/cdn/shop/files/1_f8ce6367-726b-4ace-bea1-dac077432018.webp?v=1732746477' alt = 'Scottish Claymore' width = 250&gt;
+          &lt;/a&gt;
+          </code>
+      </section>
+    </section>
+    <!-- Pulled and slightly modified from my Week 1 Code -->
+
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+        <h1>HEADING 1</h1>
+        <h2>HEADING 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+
+        <h4>Sample Code</h4>
+        <code>
+          &lt;h1>Heading 1&lt;/h1>
+          &lt;h2>Heading 2&lt;/h2>
+          &lt;h3>Heading 3&lt;/h3>
+          &lt;h4>Heading 4&lt;/h4>
+        </code>
+      </section>
+    <!-- Pulled and slightly modified from my Week 1 Code -->
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <p>A paragraph is a series of words!</p>
+
+        <h4>Sample Code</h4>
+        <code>
+          &lt;p>A paragraph is a series of words!&lt;/p>
+        </code>
+      </section>
+    <!-- Pulled and slightly modified from my Week 1 Code -->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>CSS selector:</h4>
+        <p>.numberList</p>
+          <ol class = 'numberList'>
+            <li>Dagger</li>
+            <li>Sword</li>
+          </ol>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ol&gt;
+            &lt;li&gt;Dagger&lt;/li&gt;
+            &lt;li&gt;Sword&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+      </section>
+    <!-- Referenced from W3Schools -->
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+          <ul class = 'navBar'>
+            <li><a href = 'index.html'>Home</a></li>
+            <li><a href = 'index.html'>Shop</a></li>
+          </ul>
+
+        <h4>Sample Code</h4>
+        <code>
+          &lt;ul class = 'navBar'&gt;
+            &lt;li&gt;&lt;a href = &#39;index.html&#39;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href = &#39;index.html&#39;&gt;Shop&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;          
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <h4>CSS selector:</h4>
+        <p>.item</p>
+
+        <article class = 'item'>
+          <h2><a href = 'index.html'>SCOTTISH CLAYMORE</a></h2>
+          <a href = 'index.html'><img src = 'https://damascussteelblades.com/cdn/shop/files/1_f8ce6367-726b-4ace-bea1-dac077432018.webp?v=1732746477' alt = 'Scottish Claymore' width = 250></a>
+          
+          <section class = 'itemDetails'>
+            <h3><a href = 'index.html'>$100</a></h3>
+            <h3>DULL</h3>
+          </section>
+          
+           <p>A sword made of stainless steal. Comes in Dull & Sharp.<a href = 'index.html'>View Details...></a></p>
+        </article>
+
+        <h4>Sample Code</h4>
+        <code>
+          &lt;article class = &#39;item&#39;&gt;
+            &lt;h2&gt;SCOTTISH CLAYMORE&lt;/h2&gt;
+            &lt;img src = &#39;https://damascussteelblades.com/cdn/shop/files/1_f8ce6367-726b-4ace-bea1-dac077432018.webp?v=1732746477&#39; alt = &#39;Scottish Claymore&#39; width = 250&gt;
+            &lt;h3&gt;$100&lt;/h3&gt;
+            &lt;p&gt;A dull practice sword made of stainless steal. &lt;a href = &#39;index.html&#39;&gt;View Details...&gt;&lt;/a&gt;&lt;/p&gt;
+          &lt;/article&gt;
+        </code>
+      </section>
+      <!-- Referenced from W3Schools -->
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        <h4>CSS selector:</h4>
+        <p>.paymentForm</p>
+          <form class = 'paymentForm'>
+            <h3>Details</h3>
+            
+            <label for = 'email'>Email:</label>
+            <input type = 'email' id = 'email' name = 'email' placeholder = 'Email'>
+            <br>
+            <label for = 'cardName'>Name on Card:</label>
+            <input type = 'text' id = 'cardName' name = 'cardName' placeholder= 'Name on Card'>
+            <label for = 'cardNum'>Card Number:</label>
+            <input type = 'text' id = 'cardNum' name = 'cardNum' placeholder = 'Card Number'>
+            <br>
+            <label for = 'cardExp'>Date of Expiration</label>
+            <input type = 'text' id = 'cardExp' name = 'cardExp' placeholder = 'MM/YY'>
+            <label for = 'cardSecurityNum'>CVC</label>
+            <input type = 'text' id = 'cardSecurityNum' name = 'cardSecurityNum' placeholder = '***'>
+
+
+            <h4>Card Type</h4>
+
+            <input type = 'radio' id = 'credit' name = 'cardType' value = 'Credit'>
+            <label for = 'credit'>Credit Card</label>
+
+            <input type = 'radio' id = 'debit' name = 'cardType' value = 'Debit'>
+            <label for = 'debit'>Debit Card</label>  
+            
+            <br>
+            <input type = 'submit' value = 'Submit'>
+          </form>
+
+          <h4>Sample Code</h4>
+          <code>
+            &lt;form class = &#39;paymentForm&#39;&gt;
+              &lt;h4&gt;Details&lt;/h4&gt;
+              &lt;label for = &#39;email&#39;&gt;Email:&lt;/label&gt;
+              &lt;input type = &#39;email&#39; id = &#39;email&#39; name = &#39;email&#39; placeholder = &#39;Email&#39;&gt;
+              &lt;br&gt;&lt;br&gt;
+              &lt;label for = &#39;cardName&#39;&gt;Name on Card:&lt;/label&gt;
+              &lt;input type = &#39;text&#39; id = &#39;cardName&#39; name = &#39;cardName&#39; placeholder= &#39;Name on Card&#39;&gt;
+              &lt;label for = &#39;cardNum&#39;&gt;Card Number:&lt;/label&gt;
+              &lt;input type = &#39;text&#39; id = &#39;cardNum&#39; name = &#39;cardNum&#39; placeholder = &#39;Card Number&#39;&gt;
+              &lt;br&gt;
+              &lt;h4&gt;Type of Card&lt;/h4&gt;
+              &lt;label for = &#39;credit&#39;&gt;Credit Card&lt;/label&gt;
+              &lt;input type = &#39;radio&#39; id = &#39;credit&#39; name = &#39;cardType&#39; value = &#39;Credit&#39;&gt;
+              &lt;label for = &#39;debit&#39;&gt;Debit Card&lt;/label&gt;
+              &lt;input type = &#39;radio&#39; id = &#39;debit&#39; name = &#39;cardType&#39; value = &#39;Debit&#39;&gt;
+              &lt;br&gt;&lt;br&gt;
+              &lt;input type = &#39;submit&#39; value = &#39;Submit&#39;&gt;
+            &lt;/form&gt;
+          </code>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        <h4>CSS selector:</h4>
+        <p>.checkout</p>
+        <section class = 'checkout'>
+          <h2>SHOPPING CART</h2>
+          <article class = 'checkoutItem'>
+            <img src = 'https://damascussteelblades.com/cdn/shop/files/1_f8ce6367-726b-4ace-bea1-dac077432018.webp?v=1732746477' alt = 'Scottish Claymore'>
+            <h4>SCOTTISH CLAYMORE</h4>
+            <p class = 'sharpness'>DULL</p>
+            <p class = 'price'>$100</p>
+          </article>
+          <article class = 'checkoutItem'>
+            <img src = 'https://damascussteelblades.com/cdn/shop/files/1_f8ce6367-726b-4ace-bea1-dac077432018.webp?v=1732746477' alt = 'Scottish Claymore'>
+            <h4>SCOTTISH CLAYMORE</h4>
+            <p class = 'sharpness'>SHARP</p>
+            <p class = 'price'>$70</p>
+          </article>
+
+          <h4>TOTAL</h4>
+          <section class = 'cartSummary'>
+            <p>Items: 2</p>
+            <p class = 'cartPrice'>$170</p>
+          </section>
+          <!-- Pulled from Sample Code -->
+        </section>
+
+        <h4>Sample Code</h4>
+        <code>
+          &lt;section class = &#39;checkout&#39;&gt;
+            &lt;h2&gt;SHOPPING CART&lt;/h2&gt;
+            &lt;article class = &#39;checkoutItem&#39;&gt;
+              &lt;img src = &#39;https://damascussteelblades.com/cdn/shop/files/1_f8ce6367-726b-4ace-bea1-dac077432018.webp?v=1732746477&#39;&gt;
+              &lt;h4&gt;SCOTTISH CLAYMORE&lt;/h4&gt;
+              &lt;p class = &#39;sharpness&#39;&gt;DULL&lt;/p&gt;
+              &lt;p class = &#39;price&#39;&gt;$100&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class = &#39;checkoutItem&#39;&gt;
+              &lt;img src = &#39;https://damascussteelblades.com/cdn/shop/files/1_f8ce6367-726b-4ace-bea1-dac077432018.webp?v=1732746477&#39;&gt;
+              &lt;h4&gt;SCOTTISH CLAYMORE&lt;/h4&gt;
+              &lt;p class = &#39;sharpness&#39;&gt;SHARP&lt;/p&gt;
+              &lt;p class = &#39;price&#39;&gt;$70&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;h4&gt;TOTAL&lt;/h4&gt;
+            &lt;section class = &#39;cartSummary&#39;&gt;
+              &lt;p&gt;Items: 2&lt;/p&gt;
+              &lt;p class = &#39;cartPrice&#39;&gt;$170&lt;/p&gt;
+            &lt;/section&gt;
+          &lt;/section&gt;
+        </code>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <!--COMPANY INFO-->
+    <section id= 'company'>
+      <h2>Company Basics</h2>
+            <section class="element">
+
+            </section>
+      <h3>What does the company do, or offer?</h3>
+      <p>This company (name pending, i'm bad at names D:) is a blacksmithing company aimed towards pracitioners of <abbr title="Historical European Martial Arts">HEMA</abbr> and Kendo. Offering various types of blades or weapons that are dull or sharp, as well as offering services for creating custom weapons.</p>
+
+      <h3>Who is the company to potential customers? (as a person)</h3>
+      <p>To potential customers, the company should come across as a reliable blacksmith, capable of delivering quality products for the right price. As well as someone who has a deep understanding of at least HEMA & Kendo, with knowledge of other weapon-based martial arts.</p>
+
+      <h3>Why might this company entice someone to purchase a product or service</h3>
+      <p>By being a company catered to specifically HEMA & Japanese swordsmanship, potnetial customers will assume that the company is aware of the standards expected of what they offer. Such as proper weight balancing, quality matching the price. Offering custom work will also build up expectations by expecting high-quality personalized weapons, whether it is a standard blade, or one drawing its origins from fantasy.</p>
+    </section>
+    
+   <section id= 'branding'>
+      <h2>Company Branding</h2>
+            <section class="element">
+
+            </section>
+
+      <h3>Fonts</h3>
+      <p><a href = 'https://fonts.google.com/specimen/Roboto'>Roboto</a> for the paragraph & <a href = 'https://fonts.google.com/specimen/Barlow'>Barlow</a> for the headings.</p>
+
+      <h3>Colour Palette</h3>
+          <img src = 'images/colorPallete.png' width = 750 alt = 'color palete'>
+
+      <h3>Image Board/Potential Imagery/Art Direction</h3>
+            <section>
+              <img src = 'https://forgedbythor.com/wp-content/uploads/2025/01/me-forging-2-900x1200.jpg' width = 250 alt = 'smithing'>
+              <img src = 'https://faitsdarmes.com/img/ybc_blog/post/1-hema-overview.png' width = 500 alt = 'hema'>
+              <img src = 'https://upload.wikimedia.org/wikipedia/commons/0/00/Augsburg_Cod.I.6.4%C2%BA.2_%28Codex_Wallerstein%29_1r.jpg' width = 250 alt = 'medieval Art'>
+              <img src = 'https://sevenswords.uk/wp-content/uploads/2025/02/hema-combat-equipment-scaled.jpg' width = 500 alt = 'hema user'>
+            </section>
+    </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      </ul>
+
+      <figure>
+        <img src = 'https://www.medievalcollectibles.com/wp-content/uploads/2019/04/07-88WGS.jpg'>
+        <figcaption>Medieval Collectables. (n.d.). Retrieved from: <a href = 'https://www.medievalcollectibles.com/product/two-handed-great-sword/'>https://www.medievalcollectibles.com/product/two-handed-great-sword/</a></figcaption>
+      </figure>
+
+      <figure>
+        <img src = 'https://forgedbythor.com/wp-content/uploads/2025/01/me-forging-2-900x1200.jpg'>
+        <figcaption>Hilscher. 2020. Retrieved from: <a href = 'https://www.reliance-foundry.com/blog/forging'>https://www.reliance-foundry.com/blog/forging</a></figcaption>
+      </figure>
+
+      <figure>
+        <img src = 'https://www.thehemashop.com/media/catalog/product/cache/3/image/650x/20737efe5af96e140e6c181cee6f11d7/r/a/ra004-onehandedtrainer.jpg'>
+        <figcaption>The Knight Shop International Ltd. (n.d.) Retrieved from: <a href = 'https://www.thehemashop.com/regenyei-armory-one-handed-trainer'>https://www.thehemashop.com/regenyei-armory-one-handed-trainer</a></figcaption>
+      </figure>
+    
+      <figure>
+        <img src = 'https://faitsdarmes.com/img/ybc_blog/post/1-hema-overview.png'>
+        <figcaption>Faits Darmes. (n.d.) Retrieved from: <a href = 'https://faitsdarmes.com/en/blog/post/2-what-are-hema.html'>https://faitsdarmes.com/en/blog/post/2-what-are-hema.html</a></figcaption>
+      </figure>
+    </section>
+
+  </body>
+</html>

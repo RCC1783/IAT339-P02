@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body class = 'cartBody'>
+    <header>
+      <div class = 'headerImg'>
+        <h1 class = 'headerTxt'>FORGE OF THE DRAGON</h1>
+        <img src = './images/forging.png' alt = 'Blacksmith forging.'>
+      </div>
+      <nav class = 'headerNav'>        
+        <a href = "index.html">Style Sheet</a>
+        <a href = "cart.html">Shopping Cart</a>
+        <a href = "shop.html">Shop/Product Page</a>
+      </nav>
+
+    </header>
+
+
+    <div class = 'shoppingCart'>
+      <section class = 'checkout'>
+            <h2>SHOPPING CART</h2>
+            <article class = 'checkoutItem'>
+              <img src = 'https://damascussteelblades.com/cdn/shop/files/1_f8ce6367-726b-4ace-bea1-dac077432018.webp?v=1732746477' alt = 'Scottish Claymore'>
+              <h4>SCOTTISH CLAYMORE</h4>
+              <p class = 'sharpness'>DULL</p>
+              <p class = 'price'>$100</p>
+            </article>
+            <article class = 'checkoutItem'>
+              <img src = 'https://damascussteelblades.com/cdn/shop/files/1_f8ce6367-726b-4ace-bea1-dac077432018.webp?v=1732746477' alt = 'Scottish Claymore'>
+              <h4>SCOTTISH CLAYMORE</h4>
+              <p class = 'sharpness'>SHARP</p>
+              <p class = 'price'>$70</p>
+            </article>
+
+            <h4>TOTAL</h4>
+            <section class = 'cartSummary'>
+              <p>Items: 2</p>
+              <p class = 'cartPrice'>$170</p>
+            </section>
+            <!-- Pulled from Sample Code -->
+      </section>
+      
+      <section id = 'paymentSection'>
+        <form class = 'paymentForm'>
+          <h3>Details</h3>
+          
+          <label for = 'email'>Email:</label>
+          <input type = 'email' id = 'email' name = 'email' placeholder = 'Email'>
+          <br>
+          <label for = 'cardName'>Name on Card:</label>
+          <input type = 'text' id = 'cardName' name = 'cardName' placeholder= 'Name on Card'>
+          <label for = 'cardNum'>Card Number:</label>
+          <input type = 'text' id = 'cardNum' name = 'cardNum' placeholder = 'Card Number'>
+          <br>
+          <label for = 'cardExp'>Date of Expiration</label>
+          <input type = 'text' id = 'cardExp' name = 'cardExp' placeholder = 'MM/YY'>
+          <label for = 'cardSecurityNum'>CVC</label>
+          <input type = 'text' id = 'cardSecurityNum' name = 'cardSecurityNum' placeholder = '***'>
+
+
+          <h4>Card Type</h4>
+
+          <input type = 'radio' id = 'credit' name = 'cardType' value = 'Credit'>
+          <label for = 'credit'>Credit Card</label>
+
+          <input type = 'radio' id = 'debit' name = 'cardType' value = 'Debit'>
+          <label for = 'debit'>Debit Card</label>  
+          
+          <br>
+          <input type = 'submit' value = 'Proceed to Checkout'>
+        </form>
+      </section>
+    </div>
+
+  </body>
