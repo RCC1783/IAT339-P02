@@ -11,10 +11,17 @@
 
 body {
     font-family:'Arima','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 1.5rem;
+    margin: 0;
     max-width: 100%;
     /* background-color: #F5F3EF; */
 }
+
+/* NEW SECTION */
+section, footer {
+    margin: 1.5rem;
+}
+/* NEW SECTION */
+
 
 /* ///      Font Styles (I probably should be using these more...)     ////*/
 .arima-regular {
@@ -94,7 +101,7 @@ a {
 
 /* In class demo (CSS Basics Completed) */
 a:hover, a:focus, a:active {
-    color: var(--colour2);
+    color: #795f92;
 }
 
 /* In class demo (CSS Basics Completed) */
@@ -178,13 +185,20 @@ button:hover{
 /* /////////////////////////////////////////////// */
 
 /* ///      Shop Header     ////*/
+header { /* NEW - Padding moved to the parent class. */ 
+    background-color: var(--colour2);
+    color: #f4f3f0;
+    margin: 0;
+    padding: 1rem;
+}
+
 .nav_header{
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
     align-items: center;
     height: fit-content;
-    padding: 1rem 0 1rem 0;
+    /* padding: 1rem 0 1rem 0; */
 }
 
 .nav_header .expander{
@@ -196,7 +210,7 @@ button:hover{
     font-family: "Barrio";
     font-weight: 500;
     font-size: 2.25rem;
-    color: var(--colour2);
+    color: var(--colour3);
     margin-right: 2rem;
 }
 .store_logotype:hover{
@@ -248,12 +262,19 @@ button:hover{
 }
 
 .nav_button{
-    margin: 0 1.875rem;
+    padding: 0.5rem 1.875rem;
     color: var(--colour3);
     font-weight: 650;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--colour2);
+    transition-property: border-color, background-color; 
+    transition-duration: 0.5s;
 }
 .nav_button:hover, nav_button:focus{
     color: var(--colour4);
+    border-color: #f4f3f0;
 }
 
 
