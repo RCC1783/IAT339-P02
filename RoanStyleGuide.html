@@ -23,9 +23,9 @@
     </head>
     <body>
         <header>
-            <h1>Style Guide</h1>
-
             <nav class = 'nav_header'>
+                <a class="store_logotype" href="#">Style Guide</a>
+                <div class="expander"></div>
                 <div class="header_links">
                     <a class="nav_button" href = "#interactive_elements">Interactive Elements</a>
                     <a class="nav_button" href="#text_elements">Text Elements</a>
@@ -155,20 +155,23 @@
                 
                 <hr>
                 <h3>Main Navigation</h3>
-                <nav class="nav_header">
-                    <a href="#" class="store_logotype">Dungeoner's</a>
-                    <div class="expander"></div>
-                    <div class="search-bar">
-                        <input type="text" id="product_search" placeholder="Search">
-                        <button class="search-bar_button">Search</button>
-                    </div>
-                    <div class="header_links">
-                        <a class= "nav_button" href="#">Shop Categories</a>
-                        <a class= "nav_button" href="#">Cart</a>
-                    </div>
-                </nav>
+                <header>
+                    <nav class="nav_header">
+                        <a href="#" class="store_logotype">Dungeoner's</a>
+                        <div class="expander"></div>
+                        <div class="search-bar">
+                            <input type="text" id="product_search" placeholder="Search">
+                            <button class="search-bar_button">Search</button>
+                        </div>
+                        <div class="header_links">
+                            <a class= "nav_button" href="#">Shop Categories</a>
+                            <a class= "nav_button" href="#">Cart</a>
+                        </div>
+                    </nav>
+                </header>
                 <h4>Code</h4>
                 <code>
+                    &lt;header> <br>
                         &lt;nav class="nav_header"> <br>
                             &lt;a href="#" class="store_logotype">Dungeoner's&lt;/a> <br>
                             &lt;div class="expander">&lt;/div> <br>
@@ -178,7 +181,8 @@
                             &lt;/div> <br>
                             &lt;a class= "nav_button" href="#">Shop Categories&lt;/a> <br>
                             &lt;a class= "nav_button" href="#">Cart&lt;/a> <br>
-                        &lt;/nav>
+                        &lt;/nav><br>
+                    &lt;/header> 
                 </code>
                 
                 <hr>
