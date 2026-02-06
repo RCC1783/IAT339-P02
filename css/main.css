@@ -266,6 +266,8 @@ header { /* NEW - Padding moved to the parent class. */
 .header_links{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
