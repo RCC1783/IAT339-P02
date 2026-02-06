@@ -74,8 +74,17 @@ h4{
 /* ///      Code Boxes     ////*/
 code{
     font-size: 0.85rem; 
+    display: inline-block;
     max-width: fit-content;
+    max-height: 20rem;
+    overflow: scroll;
+
     color: #4b4b4b;
+    background-color: #d1d1d1;
+    border: 1px solid #4b4b4b;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0.75rem;
 }
 
 /* ///      Fit text to page     ////*/

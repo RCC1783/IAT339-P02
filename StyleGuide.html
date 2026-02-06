@@ -1,0 +1,451 @@
+<!-- Joshua Ma & Roan Clifford 2026 -->
+<!-- IAT339 -->
+
+<!-- ///////////////////
+    Please excuse my use of <br> in the code sections. It made it quicker to fill out. 
+    ////////////////////
+    Also, I was originally using more <section>s to define content sections because that felt more semantically appropriate than a div but the html validator was yelling at me.
+    //////////////////////-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Style Guide</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./css/main.css">
+
+        <!-- Google font connections -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Barrio&family=Darumadrop+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Adapted from Joshua's Header -->
+        <header>
+            <div class = 'headerImg'>
+                <h1>Style Guide</h1>    
+                <img src = 'images/forging.png' alt = 'Blacksmith forging.'>
+            </div>
+            <nav class = 'headerNav'>        
+                <a href = "#interactive_elements">Interactive Elements</a>
+                <a href = "#text_elements">Text Elements</a>
+                <a href = "#combined_elements">Combined Elements</a>
+                <a href = "#branding">Branding</a>
+                <a href = "cart.html">Shopping Cart</a>
+                <a href = "shop.html">Shop/Product Page</a>
+            </nav>
+        </header>
+
+        <section id="interactive_elements">
+            <h2>Interactive Elements</h2>
+            <hr>
+            <section id="evidence">
+                <h3>In Text Link</h3>
+                <p>Lorem ipsum selet domor <a href="#">link</a> lorem ipsum</p>
+                <h4>Sample Code</h4>
+                <code>
+                    &lt;p&gt;&lt;a href="#"&gt;link&lt;/a&gt;&lt;/p&gt;
+                </code>
+                <h4>CSS Selector</h4>
+                <code>
+                    a &lt;!-- Just the default selector --&gt;
+                </code>
+            </section>
+
+            <section>
+                <hr>
+                <h3>Navigation Elements</h3>
+                <nav>
+                    <a class="nav_button" href="#">Nav Link 1</a>
+                    <a class="nav_button" href="#">Nav Link 2</a>
+                </nav>
+
+                <h4>Sample Code</h4>
+                <code>
+                    &lt;a class="nav_button" href="#"&gt;Nav Link 1&lt;/a&gt;
+                </code>
+
+                <h4>CSS Selector</h4>
+                <code>.nav-button</code>
+            </section>
+
+            <!-- Adapted from the completed HTML basics code provided in IAT339 -->
+            <section id="Text_Inp">
+                <hr>
+                <h3>Text Input Field</h3>
+                <!-- Adapted from the completed HTML basics code provided in IAT339 -->
+                <form>
+                    <label for="txt_in">Label:</label>
+                    <input type="text" id="txt_in" placeholder="Input Field">
+                </form>
+                <h4>Sample Code</h4>
+                <code>
+                    &lt;form&gt; 
+                    <br> &lt;label for="txt_in"&gt;Label:&lt;/label&gt; <br>
+                    &lt;input type="text" id="txt_in" placeholder="Input Field"&gt;
+                    <br>
+                    &lt;/form&gt;
+                </code>
+            </section>
+
+            <section>
+                <hr>
+                <h3>Radio Buttons</h3>
+                <form>
+                    <label class="radio-label" for="radio1" >Radio 1 Label:</label>
+                    <input class="radio-in" type="radio" id="radio1" name="ex">
+                    <label class="radio-label" for="radio2" >Radio 2 Label:</label>
+                    <input class="radio-in" type="radio" id="radio2" name="ex">
+                    <label class="radio-label" for="radio3" >Radio 3 Label:</label>
+                    <input class="radio-in" type="radio" id="radio3" name="ex">
+                    <label class="radio-label" for="radio4" >Radio 4 Label:</label>
+                    <input class="radio-in" type="radio" id="radio4" name="ex">
+                    <label class="radio-label" for="radio5" >Radio 5 Label:</label>
+                    <input class="radio-in" type="radio" id="radio5" name="ex">
+                </form>
+                <h4>Sample Code</h4>
+                <code>
+                    &lt;form&gt; 
+                    <br> &lt;label class="radio-label" for="radio1"&gt;Radio 1 Label:&lt;/label&gt; <br>
+                    &lt;input class="radio-in" type="radio" id="radio1" name="ex"&gt;
+                    <br>
+                    &lt;/form&gt;
+                </code>
+            </section>
+            
+            <section>
+                <hr>
+                <h3>Image as a link</h3>
+                <a href="#"><img class="glow_on_hover" src="images/potion.png" alt="" width="200"></a>
+                <h4>Sample Code</h4>
+                <code>
+                    &lt;a href="#"&gt;&lt;img class="glow_on_hover" src="images/potion.png" alt="" width="200"&gt;&lt;/a&gt;
+                </code>
+            </section>
+
+            <section id="text_elements">
+                <h2>Text Elements</h2>
+
+                <section>
+                    <hr>
+                    <h3>Header Levels</h3>
+                        <h1>h1</h1>
+                        <h2>h2</h2>
+                        <h3>h3</h3>
+                        <h4>h4</h4>
+                </section>
+                <section>
+                    <hr>
+                    <h3>Standard Paragraph</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+                </section>
+                <section>
+                    <h3>Ordered List</h3>
+                    <ol>
+                        <li>Element a</li>
+                        <li>Element b</li>
+                        <li>Element c</li>
+                    </ol>
+                </section>
+            </section>
+            
+            <section id="combined_elements">
+                <h2>Combined Elements</h2>
+                
+                <hr>
+                <h3>Main Navigation</h3>
+                <nav class="nav_header">
+                    <a href="#" class="store_logotype">Dungeoner's</a>
+                    <div class="expander"></div>
+                    <div class="search-bar">
+                        <input type="text" id="product_search" placeholder="Search">
+                        <button class="search-bar_button">Search</button>
+                    </div>
+                    <div class="header_links">
+                        <a class= "nav_button" href="#">Shop Categories</a>
+                        <a class= "nav_button" href="#">Cart</a>
+                    </div>
+                </nav>
+                <h4>Code</h4>
+                <code>
+                        &lt;nav class="nav_header"> <br>
+                            &lt;a href="#" class="store_logotype">Dungeoner's&lt;/a> <br>
+                            &lt;div class="expander">&lt;/div> <br>
+                            &lt;div class="search-bar"> <br>
+                                &lt;input type="text" id="product_search" placeholder="Search"> <br>
+                                &lt;button class="search-bar_button">Search&lt;/button> <br>
+                            &lt;/div> <br>
+                            &lt;a class= "nav_button" href="#">Shop Categories&lt;/a> <br>
+                            &lt;a class= "nav_button" href="#">Cart&lt;/a> <br>
+                        &lt;/nav>
+                </code>
+                
+                <hr>
+                <h3>Product Listing</h3>
+                <div>
+                    <a class="product_listing glow_on_hover" href="#">
+                        <div class="product_display">
+                            <img src="images/crystal_sword.png" alt="">
+                            <p class="stock_notif">~Out of Stock~</p>
+                        </div>
+                        <div class="product_info">
+                            <p class="product_name">Crystal Sword</p>
+                            <p class="product_price">$199.99</p>  
+                        </div>
+                    </a>
+                </div>
+                <h4>Code</h4>
+                <code>
+                        &lt;a class="product_listing glow_on_hover" href="#"> <br>
+                        &lt;div class="product_display"> <br>
+                            &lt;img src="images/crystal_sword.png" alt=""> <br>
+                            &lt;p class="stock_notif">~Out of Stock~&lt;/p> <br>
+                        &lt;/div> <br>
+                        &lt;div class="product_info"> <br>
+                            &lt;p class="product_name">Crystal Sword&lt;/p> <br>
+                            &lt;p class="product_price">$199.99&lt;/p>  <br>
+                        &lt;/div> <br>
+                        &lt;/a>
+                </code>
+                <hr>
+
+                <h3>Payment Form</h3>
+                <fieldset class="payment_form">
+                    <form class="cardholder">
+                        <label for="crd_name">Cardholder Name</label>
+                        <input type="text" id="crd_name" placeholder="J Doe">
+                    </form>
+                    <form class="payment_type">
+                        <div>
+                            <label for="pymnt_type_1">Payment Type 1</label>
+                            <input type="radio" name="payment_type" id="pymnt_type_1">
+                        </div>
+                        
+                        <div class="spacer"></div>
+                        
+                        <div>
+                            <label for="pymnt_type_2">Payment Type 2</label>
+                            <input type="radio" name="payment_type" id="pymnt_type_2">
+                        </div>
+                    </form>
+                    <form class="card_numbers_group">
+                        <div class="card_numbers">
+                            <div class="crd_nmbr">
+                                <label for="crd_nmbr">Card Numer</label>
+                                <input  type="number" id="crd_nmbr" placeholder="####-####-####">
+                            </div>
+                            <div class="cvv">
+                                <label for="cvv">CVV</label>
+                                <input type="number" id="cvv" placeholder="###">
+                            </div>
+                        </div>
+                        <div class="card_expiration">
+                            <label for="expire_yy">Expires</label>
+                            <div>
+                                <input type="number" id="expire_yy" placeholder="yy">
+                        
+                                <label for="expire_mm">/</label>
+                                <input type="number" id="expire_mm" placeholder="mm">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="submit_section">
+                        <button>Submit</button>
+                    </div>
+                </fieldset>
+                <h4>Code</h4>
+                <code>
+                        &lt;fieldset class="payment_form"><br>
+                            &lt;form class="cardholder"><br>
+                                &lt;label for="crd_name">Cardholder Name&lt;/label><br>
+                                &lt;input type="text" id="crd_name" placeholder="J Doe"><br>
+                            &lt;/form><br>
+                            &lt;form class="payment_type"><br>
+                                &lt;div><br>
+                                    &lt;label for="pymnt_type_1">Payment Type 1&lt;/label><br>
+                                    &lt;input type="radio" name="payment_type" id="pymnt_type_1"><br>
+                                &lt;/div><br>
+                                
+                                &lt;div class="spacer">&lt;/div><br>
+                                
+                                &lt;div><br>
+                                    &lt;label for="pymnt_type_2">Payment Type 2&lt;/label><br>
+                                    &lt;input type="radio" name="payment_type" id="pymnt_type_2"><br>
+                                &lt;/div><br>
+                            &lt;/form><br>
+                            &lt;form class="card_numbers_group"><br>
+                                &lt;div class="card_numbers"><br>
+                                    &lt;div class="crd_nmbr"><br>
+                                        &lt;label for="crd_nmbr">Card Numer&lt;/label><br>
+                                        &lt;input  type="number" id="crd_nmbr" placeholder="####-####-####"><br>
+                                    &lt;/div><br>
+                                    &lt;div class="cvv"><br>
+                                        &lt;label for="cvv">CVV&lt;/label><br>
+                                        &lt;input type="number" id="cvv" placeholder="###"><br>
+                                    &lt;/div><br>
+                                &lt;/div><br>
+                                &lt;div class="card_expiration"><br>
+                                    &lt;label for="expire_yy">Expires&lt;/label><br>
+                                    &lt;div>
+                                        &lt;input type="number" id="expire_yy" placeholder="yy"><br>
+                                
+                                        &lt;label for="expire_mm">/&lt;/label><br>
+                                        &lt;input type="number" id="expire_mm" placeholder="mm"><br>
+                                    &lt;/div><br>
+                                &lt;/div><br>
+                            &lt;/form><br>
+                            &lt;div class="submit_section"><br>
+                                &lt;button>Submit&lt;/button><br>
+                            &lt;/div><br>
+                        &lt;/fieldset>
+                </code>
+                <hr>
+
+                <h3>Checkout Cart</h3>
+                <div class="checkout_cart">
+                    <div class="cart">
+                        <div class="cart_item">
+                            <div class="cart_display">
+                                <img src="images/crystal_sword.png" alt="">
+                                <button class="remove_from_cart_button">-</button>
+                            </div>
+                            <div class="product_info">
+                                <p class="product_name">Crystal Sword</p>
+                                <p class="product_price">$199.99</p>
+                            </div>
+                            <form>
+                                <label for="item_qty">Quantity</label>
+                                <input type="number" id="item_qty">
+                            </form>
+                        </div>
+                        <div class="cart_item">
+                            <div class="cart_display">
+                                <img src="images/potion.png" alt="">
+                                <button class="remove_from_cart_button">-</button>
+                            </div>
+                            <div class="product_info">
+                                <p class="product_name">Potion</p>
+                                <p class="product_price">$9.99</p>
+                            </div>
+                            <form>
+                                <label for="item_qty2">Quantity</label>
+                                <input type="number" id="item_qty2">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="checkout_total">
+                        <div class="checkout_total_text">
+                            <p>Total:</p>
+                            <p>$209.98</p> 
+                        </div>
+                        <button>Checkout</button>
+                    </div>
+                </div>
+                <h4>Code</h4>
+                <code>
+                        &lt;div class="checkout_cart"> <br>
+                            &lt;div class="cart"> <br>
+                                &lt;div class="cart_item"> <br>
+                                    &lt;div class="cart_display"> <br>
+                                        &lt;img src="images/crystal_sword.png" alt=""> <br>
+                                        &lt;button class="remove_from_cart_button">-&lt;/button> <br>
+                                    &lt;/div> <br>
+                                    &lt;div class="product_info"> <br>
+                                        &lt;p class="product_name">Crystal Sword&lt;/p> <br>
+                                        &lt;p class="product_price">$199.99&lt;/p> <br>
+                                    &lt;/div> <br>
+                                    &lt;form> <br>
+                                        &lt;label for="item_qty">Quantity&lt;/label> <br>
+                                        &lt;input type="number" id="item_qty"> <br>
+                                    &lt;/form> <br>
+                                &lt;/div> <br>
+                                &lt;div class="cart_item"> <br>
+                                    &lt;div class="cart_display"> <br>
+                                        &lt;img src="images/potion.png" alt=""> <br>
+                                        &lt;button class="remove_from_cart_button">-&lt;/button> <br>
+                                    &lt;/div> <br>
+                                    &lt;div class="product_info"> <br>
+                                        &lt;p class="product_name">Potion&lt;/p> <br>
+                                        &lt;p class="product_price">$9.99&lt;/p> <br>
+                                    &lt;/div> <br>
+                                    &lt;form> <br>
+                                        &lt;label for="item_qty">Quantity&lt;/label> <br>
+                                        &lt;input type="number" id="item_qty"> <br>
+                                    &lt;/form> <br>
+                                &lt;/div> <br>
+                            &lt;/div> <br>
+                            &lt;div class="checkout_total"> <br>
+                                &lt;div class="checkout_total_text"> <br>
+                                    &lt;p>Total:&lt;/p> <br>
+                                    &lt;p>$209.98&lt;/p> &lt;!--would look different if functioning--&gt; <br>
+                                &lt;/div> <br>
+                                &lt;button>Checkout&lt;/button> <br>
+                            &lt;/div> <br>
+                        &lt;/div>
+                </code>
+            </section>
+        </section>
+
+        <section id="branding">
+            <h2>Branding Section</h2>
+            <hr>
+            <h3>Dungeoner's</h3>
+            <h4>What Does Dungeoner's Offer?</h4>
+            <p>Dungeoners is a (modern) fantasy supply shop where adventurers can find all they might need for a quest. It supplies everything from potions and swords to talismans and ancient tombs.</p>
+            
+            <h4>Who is Dungeoner's to Potential Customers? (As a Person)</h4>
+            <p>The company is perceived as friendly, welcoming, and local but there should be a somewhat comedic/mysterious element with how it is able to acquire some of its more dangerous and valuable items. I want the shop to feel very local/small town too. Customer wise, I think Dungeoner's should cater primarily to its local base as well. Maybe there is a dungeon or two just outside of the town or maybe the town is built around one. Either way, customers who shop at Dungeoner's tend to stay customers and are likely trying to get their goods quickly and reliably so they can continue exploring.</p>
+
+            <h4>Why Dungeoner's?</h4>
+            <p>Dungeoner's is focused on selling products for every price range (with quality increasing with price). That being said, the products at low levels should still be considered good quality which makes it a good store for adventures of all skill levels and coin purse sizes. Maybe they also have interesting weekly specials or limited time only items</p>
+
+            <section>
+                <h4>Colour Pallete</h4>
+                <div class="colour_pallete_box" style="display: flex;">
+                    <div class="box col_1" style="width: 100px; height: 100px; background-color: #561013;"></div>
+                    <div class="box col_2" style="width: 100px; height: 100px; background-color: #E07F00;"></div>
+                    <div class="box col_3" style="width: 100px; height: 100px; background-color: #002A32;"></div>
+                    <div class="box col_4" style="width: 100px; height: 100px; background-color: #7E3A76;"></div>
+                </div>
+            </section>
+            
+            <section>
+                <h4>Fonts (Body)</h4>
+                <p class="arima-regular" >Arima - ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</p>
+
+                <h4>Fonts (Decorative)</h4>
+                <p class="daruma-regular" > Darumadrop One - ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</p>
+                <p class="barrio-regular" > Barrio - ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</p>
+            </section>
+            <section>
+                <h4>Design Inspiration</h4>
+                <p>Clair Obscur: Expedition 33's UI is modern in its sensibilites but manages to incorperate elements of fantasty and magic. (img source: The Sixth Axis)</p>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thesixthaxis.com%2Fwp-content%2Fuploads%2F2025%2F04%2FClair-Obscur-Expedition-33-combat-gestral.jpg&f=1&nofb=1&ipt=fc2bd70d9f026b2210de79c12a0efede563842149669566ed61715a4d7458fd8" alt="Screenshot of Clair Obscur: Expedition 33 showcasing its in-combat UI">
+
+                <p>This Poster for Fortiche's upcoming Penelope of Sparta feels very modern but is brought into the realm of fantasy with the juxtoposion of the spear and large statues.
+                </p>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpics.filmaffinity.com%2Fpenelope_of_sparta-259110353-large.jpg&f=1&nofb=1&ipt=a61fd2bc13ecf02a4087a460535196e2d3d76c14a2b8f6dd14beabb16ef7d569" alt="Poster for the unreleased animated film Penelope of Sparta">
+            </section>
+            <section>
+                <h4>Potential goods</h4>
+                <p>Dungeoner's sells all matter of items that could be used by someone venturing into dungeons or going on quests.</p>
+
+                <img src="images/crystal_sword.png" alt="">
+                <img src="images/potion.png" alt="">
+            </section>
+
+        </section>
+        <footer>
+            <hr>
+            <h4>Fonts</h4>
+            <p>Gama, N., Correia, J., Wagner, R.. (2020). Arima [Font]. https://fonts.google.com/specimen/Arima?query=Natanael+Gama</p>
+            <p>Maniackers Design. (2020). Darumadrop One [Font]. https://fonts.google.com/specimen/Darumadrop+One/license?query=Natanael+Gama</p>
+            <p>Omnibus-Type. (2016). Barrio [Font]https://fonts.google.com/specimen/Barrio?query=Natanael+Gama</p>
+            <h4>Images</h4>
+            <p>Clifford Roan. (2026). Crystal Sword [Digital Illustration].</p>
+            <p>Clifford Roan. (2026). Potion [Digital Illustration].</p>
+        </footer>
+    </body>
+</html>
