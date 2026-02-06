@@ -274,12 +274,12 @@ header { /* NEW - Padding moved to the parent class. */
 
 .nav_button{
     padding: 0.5rem 1.875rem;
+    margin: 0.25rem;
     color: var(--colour3);
     font-weight: 650;
 
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--colour2);
+    border: 2px solid var(--colour2);
+    border-radius: 5px;
     transition-property: border-color, background-color; 
     transition-duration: 0.5s;
 }
@@ -761,8 +761,8 @@ header { /* NEW - Padding moved to the parent class. */
 
 @media screen and (max-width: 600px) {
     body{
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 }
 
