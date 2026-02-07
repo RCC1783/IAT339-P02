@@ -6,7 +6,7 @@
     --colour3: #002A32;
     --colour4: #7E3A76;
 
-    background-color: #f4f3f0;
+    background-color: #ffffff;
 }
 
 body {
@@ -21,29 +21,6 @@ section, footer {
     margin: 1.5rem;
 }
 /* NEW SECTION */
-
-
-/* ///      Font Styles (I probably should be using these more...)     ////*/
-.arima-regular {
-  font-family: "Arima", system-ui;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.1rem;
-}
-
-.daruma-regular {
-  font-family: "Darumadrop One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.3rem;
-}
-
-.barrio-regular {
-  font-family: "Barrio", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.1rem;
-}
 
 /* ///      Header Styles     ////*/
 h1{
@@ -195,7 +172,7 @@ button:hover{
 
 /* ///      Shop Header     ////*/
 header { /* NEW - Padding moved to the parent class. */ 
-    background-color: var(--colour2);
+    background-color: var(--colour1);
     color: #f4f3f0;
     margin: 0;
     padding: 1rem;
@@ -219,7 +196,7 @@ header { /* NEW - Padding moved to the parent class. */
     font-family: "Barrio";
     font-weight: 500;
     font-size: 2.25rem;
-    color: var(--colour3);
+    color: var(--colour2);
     margin-right: 2rem;
 }
 .store_logotype:hover{
@@ -242,7 +219,9 @@ header { /* NEW - Padding moved to the parent class. */
 
     border-radius: 10px;
     text-align: center;
-    border: solid 2px var(--colour3);
+    border: solid 2px white;
+    background-color: #ffffff66;
+    color: white;
 
     transition: border 0.25s;
 }
@@ -252,7 +231,7 @@ header { /* NEW - Padding moved to the parent class. */
 
 .search-bar_button{
     /* box-sizing: border-box; */
-    background-color: #002A32;
+    background-color: var(--colour2);
     border: none;
     /* width: 30px; */
     height: 25px;
@@ -277,16 +256,17 @@ header { /* NEW - Padding moved to the parent class. */
     margin: 0.25rem;
     box-sizing: border-box;
 
-    color: var(--colour3);
+    background-color: var(--colour1);
+    color: white;
     font-weight: 650;
 
-    border: 2px solid var(--colour2);
+    border: 2px solid var(--colour1);
     border-radius: 5px;
     
     transition: border-color  0.5s, background-color  0.5s; 
 }
 .nav_button:hover, nav_button:focus{
-    color: var(--colour4);
+    color: white;
     border-color: #f4f3f0;
 }
 
