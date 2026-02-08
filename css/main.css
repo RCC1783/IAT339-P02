@@ -20,6 +20,14 @@ body {
 section, footer {
     margin: 1.5rem;
 }
+
+hr {
+  height: 2px;
+  border-width: 0px;
+  color: var(--colour1);
+  background-color: var(--colour1);
+}
+
 /* NEW SECTION */
 
 /* ///      Header Styles     ////*/
