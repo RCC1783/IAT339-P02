@@ -200,6 +200,62 @@ header { /* NEW - Padding moved to the parent class. */
     min-width: 1rem;
 }
 
+/*NEW Shop HR & Shop Footer */
+
+.category_divider {
+    margin: 2rem;
+}
+
+footer {
+    background-color: var(--colour1);
+    color: #f4f3f0;
+    margin: 0;
+    padding: 1rem;
+}
+
+.nav_footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+
+    height: fit-content;
+}
+
+.nav_footer_section{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+/* Store Nav */
+
+.nav_category {
+    background-color: var(--colour2);
+    display: flex;
+    justify-content: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 999;
+}
+
+.nav_category a {
+    color: white;
+    background-color: var(--colour2);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+}
+
+.nav_category a:hover {
+    background-color: var(--colour4);
+}
+
 .store_logotype{
     font-family: "Barrio";
     font-weight: 500;
@@ -654,7 +710,10 @@ header { /* NEW - Padding moved to the parent class. */
     flex-grow: 1;
     min-width: 15rem;
 
+    max-width: 300px;
+
     margin-right: 1rem;
+
 }
 
 .two_col_right_dom_left_box p{
