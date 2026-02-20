@@ -12,7 +12,12 @@
 body {
     font-family:'Arima','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    max-width: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
     /* background-color: #F5F3EF; */
 }
 
@@ -24,7 +29,7 @@ section, footer {
 .page_main_content{
     display: flex;
     flex-direction: column;
-    margin: 2.5rem auto;
+    margin: 2.5rem 8rem;
     max-width: 100rem;
 }
 
@@ -162,20 +167,21 @@ button:hover{
 /* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 .purchase_options_container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     max-width: fit-content;
 }
 .purchase_options_container div{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin: 1rem 2rem;
+    justify-items: center;
+    margin: 1rem 1rem;
     min-width: fit-content;
 }
 .purchase_options_container .price{
-    margin-left: 1.5rem;
+    font-weight: 700;
 }
 .purchase_option{
     display: flex;
@@ -248,12 +254,6 @@ button:hover{
     margin-left: 1rem;
 }
 
-.home_banner{
-    background-color: #002A32;
-    min-width: 100%;
-    height: 35vh;
-}
-
 /* ///      Glow on Hover     ////*/
 .glow_on_hover{
     filter:none;
@@ -268,20 +268,23 @@ button:hover{
 /* /////////////////////////////////////////////// */
 
 /* ///      Shop Header     ////*/
-header { /* NEW - Padding moved to the parent class. */ 
+header {
     background-color: var(--colour1);
     color: #f4f3f0;
     margin: 0;
-    padding: 1rem;
+    /* padding: 1rem; */
+
+    width: 100%;
 }
 
 .nav_header{
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
     align-items: center;
     height: fit-content;
-    /* padding: 1rem 0 1rem 0; */
+    padding: 1rem 3rem;
 }
 
 .nav_header .expander{
@@ -302,7 +305,7 @@ header { /* NEW - Padding moved to the parent class. */
 
 .search-bar{
     margin: 1rem;
-    min-width: 361px;
+    min-width: 400px;
     display: flex;
     flex-direction: row;
 }
@@ -314,7 +317,7 @@ header { /* NEW - Padding moved to the parent class. */
     max-width: 260px;
     height: 25px;
 
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     text-align: center;
     border: solid 2px white;
     background-color: #ffffff66;
@@ -333,7 +336,7 @@ header { /* NEW - Padding moved to the parent class. */
     /* width: 30px; */
     height: 25px;
     color: white;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     padding: 0 1rem;
 
     transition: background-color 0.5s, color 0.4s;
@@ -557,6 +560,9 @@ header { /* NEW - Padding moved to the parent class. */
     min-width: 20%;
 }
 
+/*  //////////////////////////////////////////// */
+/*  /////           Product Cart          ///// */
+/*  /////////////////////////////////////////// */
 
 /* ///      Product Card in Checkout Cart     ////*/
 .cart_item{
@@ -754,6 +760,61 @@ header { /* NEW - Padding moved to the parent class. */
     display: flex;
     flex-direction: row;
 }
+
+.flex_cols_container{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
+.col{
+    flex: 1;
+    margin: 1.5rem;
+}
+
+.col_wide{
+    flex: 2;
+    margin: 1.5rem;
+}
+
+.home_banner{
+    background-color: #002A32;
+    min-width: 100%;
+    height: 35vh;
+}
+/* ///////////////////////////////////////////////////////////////// */
+/* ///                    Product Detailed View                  /// */
+/* ///////////////////////////////////////////////////////////////// */
+.detailed_product_images{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    align-items: center;
+}
+
+.primary_product_image{
+    min-width: 100%;
+    height: auto;
+
+    aspect-ratio: 1;
+}
+
+.additional_images_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 50%;
+    max-height: 75px;
+
+    overflow-x: scroll;
+}
+.additional_images_container img{
+    max-width: 100%;
+    margin: 0.5rem;
+}
+
 
 /* ///////////////////////////////////////////////////////////////// */
 /* ///             Media Queries for responsiveness              /// */

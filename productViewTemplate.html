@@ -28,26 +28,36 @@
         </nav>
     </header>
 
-    <section class="page_main_content">
-        <h2>Standard Potion</h2>
-        <img src="./images/potion.png">
-        <div>
-            <img src="./images/potion.png">
-            <img src="./images/potion.png">
-            <img src="./images/potion.png">
+    <div class="page_main_content">
+        <div class="flex_cols_container">
+            <div class="col">
+                <div class="detailed_product_images">
+                    <img class="primary_product_image" src="./images/potion.png">
+                    <div class="additional_images_container">
+                        <img src="./images/potion.png">
+                        <img src="./images/potion.png">
+                        <img src="./images/potion.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_wide">
+                <h2>Regular Potion</h2>
+                <p>Our potions are brewed daily by our resident alchemist with each batch tested before bottling to ensure a satisfactory product.</p>
+                <p>These regular potions brewed with standard quality ingredients are perfect for light activities or just to top up your health. For more durastic healing needs, we recomend one of our higher grade potions.</p>
+
+                <h3>Purchase Options</h3>
+                <form class="purchase_options_container">
+                    <div><p class="price">$1.99</p><label class="purchase_option"><input type="radio" id="op1" checked="checked" name="ex"><span>Single</span></label></div>
+                    <div><p class="price">$8.99</p><label class="purchase_option"><input type="radio" id="op2" name="ex"><span>5 Pack</span></label></div>
+                    <div><p class="price">$18.99</p><label class="purchase_option"><input type="radio" id="op3" name="ex"><span>10 Pack</span></label></div>
+                    <div><p class="price">$35.99</p><label class="purchase_option"><input type="radio" id="op4" name="ex"><span>20 Pack</span></label></div>
+                </form>
+                <button>Add to Cart</button>
+            </div>
         </div>
 
-        <p>Description</p>
-
-        <h3>Purchase Options</h3>
-
-        <form class="purchase_options_container">
-            <div><p class="price">$5.99</p><label class="purchase_option"><input type="radio" id="op1" name="ex"><span>5 Pack</span></label></div>
-            <div><p class="price">$9.99</p><label class="purchase_option"><input type="radio" id="op2" name="ex"><span>10 Pack</span></label></div>
-            <div><p class="price">$15.99</p><label class="purchase_option"><input type="radio" id="op3" name="ex"><span>20 Pack</span></label></div>
-        </form>
-        
-        <button>Add to Cart</button>
-    </section>
+        <p>Reviws and stuff down here</p>
+    </div>
 </body>
 </html>
