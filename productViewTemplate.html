@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View Template</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Google font connections so the fonts I plan on using are visible -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Barrio&family=Darumadrop+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav_header">
+            <a href="./homepage.html" class="store_logotype">Dungeoner's</a>
+            <div class="expander"></div>
+            <div class="search-bar">
+                <input type="text" id="product_search" placeholder="Search">
+                <button class="search-bar_button">Search</button>
+            </div>
+            <div class="header_links">
+                <a class= "nav_button" href="#">Shop Categories</a>
+                <a class= "nav_button" href="#">Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page_main_content">
+        <div class="flex_cols_container">
+            <div class="col">
+                <div class="detailed_product_images">
+                    <img class="primary_product_image" src="./images/potion.png">
+                    <div class="additional_images_container">
+                        <img src="./images/potion.png">
+                        <img src="./images/potion.png">
+                        <img src="./images/potion.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_wide">
+                <h2>Regular Potion</h2>
+                <p>Our potions are brewed daily by our resident alchemist with each batch tested before bottling to ensure a satisfactory product.</p>
+                <p>These regular potions brewed with standard quality ingredients are perfect for light activities or just to top up your health. For more durastic healing needs, we recomend one of our higher grade potions.</p>
+
+                <h3>Purchase Options</h3>
+                <form class="purchase_options_container">
+                    <div><p class="price">$1.99</p><label class="purchase_option"><input type="radio" id="op1" checked="checked" name="ex"><span>Single</span></label></div>
+                    <div><p class="price">$8.99</p><label class="purchase_option"><input type="radio" id="op2" name="ex"><span>5 Pack</span></label></div>
+                    <div><p class="price">$18.99</p><label class="purchase_option"><input type="radio" id="op3" name="ex"><span>10 Pack</span></label></div>
+                    <div><p class="price">$35.99</p><label class="purchase_option"><input type="radio" id="op4" name="ex"><span>20 Pack</span></label></div>
+                </form>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <p>Reviws and stuff down here</p>
+    </div>
+</body>
+</html>
