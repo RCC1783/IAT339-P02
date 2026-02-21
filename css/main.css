@@ -21,6 +21,10 @@ body {
     /* background-color: #F5F3EF; */
 }
 
+.productPageBody {
+    display: block;
+}
+
 /* NEW SECTION */
 section, footer {
     margin: 1.5rem;
