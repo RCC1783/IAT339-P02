@@ -61,6 +61,21 @@
             <h4><a href = '#'>7</a> Adventurers have given their recommendations!</h4>
             
             <!-- stuff for leaving your own review -->
+             <form>
+                <fieldset>
+                    <legend>Leave Your Thoughts</legend>
+                        <label for = 'recommend'>Recommend?</label>
+                            <select id = 'recommend' name = 'recommendList' form = 'recommendForm'>
+                                <option value = 'yes'>Recommend!</option>
+                                <option value = 'nay'>Don't Recommend!</option>
+                            </select>
+                        <p>Share your thoughts</p>
+                        <textarea id = 'review' placeholder = 'Write your thoughts here.'>
+                        </textarea>
+
+                            <button>Submit</button>
+                </fieldset>
+             </form>
 
             <article class = 'review'> <!--previous reviews | should require an account | verified dungeon completion number from a guild | if or not you recommend it | text of their review -->
 
