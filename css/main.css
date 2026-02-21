@@ -44,6 +44,67 @@ hr {
   background-color: var(--colour1);
 }
 
+.userReview {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.userReview fieldset {
+    border-radius: 5px;
+    border-color: var(--colour1);
+}
+
+.userReview .writeReview, .submitReview {
+    margin: 1rem;
+}
+
+.userReview textarea, select {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.userReview legend {
+    font-family: "Arima";
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.userReview p {
+    font-weight: 600;  
+}
+
+.review {
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    border: solid 1px var(--colour3);
+}
+
+.review .topPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--colour3);
+    color: white;
+    padding: 0.5rem;
+}
+
+.topPart .userInfo {
+    display: flex;
+    align-items: center;    
+}
+
+.topPart p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.reviewText {
+    padding: 1rem;
+}
+
+
 /* NEW SECTION */
 
 /* ///      Header Styles     ////*/

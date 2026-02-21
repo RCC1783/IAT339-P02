@@ -61,26 +61,47 @@
             <h4><a href = '#'>7</a> Adventurers have given their recommendations!</h4>
             
             <!-- stuff for leaving your own review -->
-             <form>
-                <fieldset>
-                    <legend>Leave Your Thoughts</legend>
-                        <label for = 'recommend'>Recommend?</label>
-                            <select id = 'recommend' name = 'recommendList' form = 'recommendForm'>
-                                <option value = 'yes'>Recommend!</option>
-                                <option value = 'nay'>Don't Recommend!</option>
-                            </select>
-                        <p>Share your thoughts</p>
-                        <textarea id = 'review' placeholder = 'Write your thoughts here.'>
-                        </textarea>
+            <div class = 'userReview'>
+                <form>
+                    <fieldset>
+                        <legend>Leave Your Thoughts</legend>
+                            <div class = 'recommendationSelect'>
+                                <label for = 'recommend'>Recommend?</label>  
+                                    <select id = 'recommend' name = 'recommendList' form = 'recommendForm'>
+                                        <option value = 'default' selected disabled>Choose an option</option>
+                                        <option value = 'yes'>Recommend!</option>
+                                        <option value = 'nay'>Don't Recommend!</option>
+                                    </select>
+                            </div>
 
-                            <button>Submit</button>
-                </fieldset>
-             </form>
+                            <div class = 'writeReview'>
+                                <p>Share your thoughts</p>
+                                <textarea id = 'review' placeholder = 'Write your thoughts here.'>
+                                </textarea>
+                            </div>
 
-            <article class = 'review'> <!--previous reviews | should require an account | verified dungeon completion number from a guild | if or not you recommend it | text of their review -->
+                            <div class = 'submitReview'>
+                                <button>Submit</button>
+                            </div>
+                    </fieldset>
+                </form>
+            </div>
 
-            </article>
-            <p>Reviws and stuff down here</p>>
+            <hr>
+
+            <div>
+                <article class = 'review'> <!--previous reviews | should require an account | verified dungeon completion number from a guild | if or not you recommend it | text of their review -->
+                    <div class = 'topPart'>
+                        <div class = 'userInfo'>
+                            <h4>squireLifer4</h4>
+                            <p>| 3 Dungeons Completed</p>
+                        </div>
+                        <h4 class = 'rating'>Not Recommended</h4>
+                    </div>
+                    <div class = 'reviewText'>
+                        <p>didn't even heal my cuts.</p>
+                </article>
+            </div>
         </div>
     </div>
 </body>
