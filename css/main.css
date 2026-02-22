@@ -38,11 +38,11 @@ section, footer {
 }
 
 .callout{
-    padding: 1rem 3rem;
+    padding: 1rem 3rem 2rem 3rem;
 
     max-width: 100%;
-    border: solid 2px var(--colour1);
-    border-radius: 5px;
+    border: solid 3px var(--colour3);
+    border-radius: 10px;
 }
 
 hr {
@@ -128,7 +128,7 @@ h1{
 h2{
     font-family: "Darumadrop One";
     font-size: 2.4rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     margin-top: 0.5rem;
 }
 
@@ -244,7 +244,9 @@ button:hover{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     max-width: fit-content;
+    text-align: center;
 }
 .purchase_options_container div{
     display: flex;
@@ -391,7 +393,7 @@ footer {
     align-items: flex-start;
     gap: 48px;
 
-    max-width: 100rem;
+    max-width: 130rem;
     width: 100rem;
     margin: 0 auto;
     padding: 1rem 5rem;
@@ -584,6 +586,21 @@ footer {
 
     /* If out of stock display: block. Otherwise, display: none*/
     display: none;
+
+    background-color: var(--colour1);
+    color: white;
+}
+
+.out_stock_notif{
+    /* To center this: https://www.w3schools.com/howto/howto_css_image_text.asp */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+
+    /* If out of stock display: block. Otherwise, display: none*/
+    display: block;
 
     background-color: var(--colour1);
     color: white;
@@ -898,25 +915,40 @@ footer {
     max-width: 90%;
 }
 
-.checkout_section{
+.flex_row_generic{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .flex_cols_container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 2rem 0;
 }
 
 .col{
+    display: flex;
+    flex-direction: column;
     flex: 1;
     margin: 1.5rem;
+    min-width: 15rem;
+
+    justify-content: center;
 }
 
 .col_wide{
+    display: flex;
+    flex-direction: column;
     flex: 2;
     margin: 1.5rem;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 25rem;
 }
 
 .home_banner{
@@ -946,6 +978,17 @@ footer {
 
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.center_all_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+.center_all_col h3{
     text-align: center;
 }
 /* ///////////////////////////////////////////////////////////////// */
@@ -979,6 +1022,13 @@ footer {
 .additional_images_container img{
     max-width: 100%;
     margin: 0.5rem;
+}
+
+.vrt_bar{
+    border-left: solid 3px var(--colour1);
+    background-color: var(--colour1);
+    height: 100%;
+    /* min-width: 2px; */
 }
 
 
