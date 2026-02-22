@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Barrio&family=Darumadrop+One&display=swap" rel="stylesheet">
 </head>
-<body class = 'productPageBody'>
+<!-- got rid of 'productPageBody' and class because there was already a generic that could be used -->
+<body>
     <header>
         <nav class="nav_header">
             <a href="./homepage.html" class="store_logotype">Dungeoner's</a>
@@ -34,188 +35,190 @@
         <a href = '#basicWeaponry'>Dungeon Basics</a>
         <a href = '#magicalWeaponry'>Magical Weaponry</a>
     </nav>
-
-    <hr class = category_divider>
     
-    <div class="two_col_right_dominant" id = 'basicWeaponry'>
-        <section class="two_col_right_dom_left_box">
-            <h2>Dungeon Basics</h2>
-            <p>For those starting off, or just seeking a run of the mill tool that gets the job done.</p>
-        </section>
-        
-        <div id="products_container">
-            <a class="product_listing glow_on_hover" href="./sword_detailed_view.html">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name"> Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="./sword_detailed_view.html">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name">  Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="./sword_detailed_view.html">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name">  Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="/potion_detailed_view.html">
-                <div class="product_display">
-                    <img src="images/potion.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name"> Standard Potion</p>
-                    <p class="product_price">$1.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="/potion_detailed_view.html">
-                <div class="product_display">
-                    <img src="images/potion.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name"> Standard Potion</p>
-                    <p class="product_price">$1.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="/potion_detailed_view.html">
-                <div class="product_display">
-                    <img src="images/potion.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name"> Standard Potion</p>
-                    <p class="product_price">$1.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="#">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name">  Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="#">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name">  Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
+    <div class="page_main_content">
+        <hr> <!-- Got rid of custom class bc use of 'page_main_content' removed the need -->
+        <div class="two_col_right_dominant" id = 'basicWeaponry'>
+            <section class="two_col_right_dom_left_box">
+                <h2>Dungeon Basics</h2>
+                <p>For those starting off, or just seeking a run of the mill tool that gets the job done.</p>
+            </section>
+            
+            <div class="products_container">
+                <a class="product_listing glow_on_hover" href="./sword_detailed_view.html">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name"> Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="./sword_detailed_view.html">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name">  Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="./sword_detailed_view.html">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name">  Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="/potion_detailed_view.html">
+                    <div class="product_display">
+                        <img src="images/potion.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name"> Standard Potion</p>
+                        <p class="product_price">$1.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="/potion_detailed_view.html">
+                    <div class="product_display">
+                        <img src="images/potion.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name"> Standard Potion</p>
+                        <p class="product_price">$1.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="/potion_detailed_view.html">
+                    <div class="product_display">
+                        <img src="images/potion.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name"> Standard Potion</p>
+                        <p class="product_price">$1.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="#">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name">  Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="#">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name">  Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
 
-    <hr class = category_divider>
+        <!-- Got rid of custom class bc use of 'page_main_content' removed the need -->
+        <hr> 
 
-    <div class="two_col_right_dominant" id = 'magicalWeaponry'>
-        <section class="two_col_right_dom_left_box">
-            <h2>Magical Weapons</h2>
-            <p>Perfect for dangerous dungeons, these weapons are enchanted by our finest magicians.</p>
-        </section>
-        
-        <div id="products_container">
-            <a class="product_listing glow_on_hover" href="#">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name"> Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="#">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name">  Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="#">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name">  Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="#">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name"> Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="#">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name"> Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="#">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name">  Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="#">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name">  Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
-            <a class="product_listing glow_on_hover" href="#">
-                <div class="product_display">
-                    <img src="images/crystal_sword.png" alt="">
-                    <p class="stock_notif">~Out of Stock~</p>
-                </div>
-                <div class="product_info">
-                    <p class="product_name">  Crystal Sword</p>
-                    <p class="product_price">$199.99</p>  
-                </div>
-            </a>
+        <div class="two_col_right_dominant" id = 'magicalWeaponry'>
+            <section class="two_col_right_dom_left_box">
+                <h2>Magical Weapons</h2>
+                <p>Perfect for dangerous dungeons, these weapons are enchanted by our finest magicians.</p>
+            </section>
+            
+            <div class="products_container">
+                <a class="product_listing glow_on_hover" href="#">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name"> Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="#">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name">  Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="#">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name">  Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="#">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name"> Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="#">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name"> Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="#">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name">  Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="#">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name">  Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+                <a class="product_listing glow_on_hover" href="#">
+                    <div class="product_display">
+                        <img src="images/crystal_sword.png" alt="">
+                        <p class="stock_notif">~Out of Stock~</p>
+                    </div>
+                    <div class="product_info">
+                        <p class="product_name">  Crystal Sword</p>
+                        <p class="product_price">$199.99</p>  
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 

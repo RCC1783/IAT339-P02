@@ -29,98 +29,108 @@
     </header>
 
     <div class="page_main_content">
-        <h2>Your Cart</h2>
+        <div class="flex_cols_container">
+            <div class="center_all_col">
+                <h2>Your Cart</h2>
 
-        <div class="checkout_cart">
-            <div class="cart">
-                <div class="cart_item">
-                    <div class="cart_display">
-                        <img src="images/crystal_sword.png" alt="">
-                        <button class="remove_from_cart_button">-</button>
-                    </div>
-                    <div class="product_info">
-                        <p class="product_name">Crystal Sword</p>
-                        <p class="product_price">$199.99</p>
-                    </div>
-                    <form>
-                        <label for="item_qty">Quantity</label>
-                        <input type="number" id="item_qty">
-                    </form>
-                </div>
-                <div class="cart_item">
-                    <div class="cart_display">
-                        <img src="images/potion.png" alt="">
-                        <button class="remove_from_cart_button">-</button>
-                    </div>
-                    <div class="product_info">
-                        <p class="product_name">Potion</p>
-                        <p class="product_price">$9.99</p>
-                    </div>
-                    <form>
-                        <label for="item_qty2">Quantity</label>
-                        <input type="number" id="item_qty2">
-                    </form>
-                </div>
-            </div>
-            <div class="checkout_total">
-                <div class="checkout_total_text">
-                    <p>Total:</p>
-                    <p>$209.98</p> 
-                </div>
-                <button>Checkout</button>
-            </div>
-        </div>
-        
-        <div class="two_col_right_dominant">
-            <section class="two_col_right_dom_left_box">
-                <h2>Checkout</h2>
-                <h3>Notice:</h3>
-                <p>We do not currently do shipping. Please fill out the paymant form and you can pick up your order in person where we will verify your card information.</p>
-                <p>We will hold your order for up to 30 days.</p>
-            </section>
-            <fieldset class="payment_form">
-                <form class="cardholder">
-                    <label for="crd_name">Cardholder Name</label>
-                    <input type="text" id="crd_name" placeholder="J Doe">
-                </form>
-                <form class="payment_type">
-                    <div>
-                        <label for="pymnt_type_1">Payment Type 1</label>
-                        <input type="radio" name="payment_type" id="pymnt_type_1">
-                    </div>
-                    
-                    <div class="spacer"></div>
-                    
-                    <div>
-                        <label for="pymnt_type_2">Payment Type 2</label>
-                        <input type="radio" name="payment_type" id="pymnt_type_2">
-                    </div>
-                </form>
-                <form class="card_numbers_group">
-                    <div class="card_numbers">
-                        <div class="crd_nmbr">
-                            <label for="crd_nmbr">Card Numer</label>
-                            <input  type="number" id="crd_nmbr" placeholder="####-####-####">
+                <div class="checkout_cart">
+                    <div class="cart">
+                        <div class="cart_item">
+                            <div class="cart_display">
+                                <img src="images/crystal_sword.png" alt="">
+                                <button class="remove_from_cart_button">-</button>
+                            </div>
+                            <div class="flex_cols_container">
+                                <div class="product_info">
+                                    <p class="product_name">Crystal Sword</p>
+                                    <p class="product_price">$199.99</p>
+                                </div>
+                                <form>
+                                    <label for="item_qty">Quantity</label>
+                                    <input type="number" id="item_qty">
+                                </form>
+                            </div>
                         </div>
-                        <div class="cvv">
-                            <label for="cvv">CVV</label>
-                            <input type="number" id="cvv" placeholder="###">
+                        <div class="cart_item">
+                            <div class="cart_display">
+                                <img src="images/potion.png" alt="">
+                                <button class="remove_from_cart_button">-</button>
+                            </div>
+                            <div class="flex_cols_container">
+                                <div class="product_info">
+                                    <p class="product_name">Potion</p>
+                                    <p class="product_price">$9.99</p>
+                                </div>
+                                <form>
+                                    <label for="item_qty2">Quantity</label>
+                                    <input type="number" id="item_qty2">
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="card_expiration">
-                        <label for="expire_yy">Expires</label>
+                    <div class="checkout_total">
+                        <div class="checkout_total_text">
+                            <p>Total:</p>
+                            <p>$209.98</p> 
+                        </div>
+                        <button>Checkout</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="two_col_right_dominant">
+                <section class="col_wide">
+                    <div>
+                        <h2>Checkout</h2>
+                        <h3>Notice:</h3>
+                        <p>We do not currently do shipping. Please fill out the paymant form and you can pick up your order in person where we will verify your card information.</p>
+                        <p>We will hold your order for up to 30 days.</p>
+                    </div>
+                </section>
+                <fieldset class="payment_form">
+                    <form class="cardholder">
+                        <label for="crd_name">Cardholder Name</label>
+                        <input type="text" id="crd_name" placeholder="J Doe">
+                    </form>
+                    <form class="payment_type">
                         <div>
-                            <input type="number" id="expire_yy" placeholder="yy">
-                    
-                            <label for="expire_mm">/</label>
-                            <input type="number" id="expire_mm" placeholder="mm">
+                            <label for="pymnt_type_1">Payment Type 1</label>
+                            <input type="radio" name="payment_type" id="pymnt_type_1">
                         </div>
+                        
+                        <div class="spacer"></div>
+                        
+                        <div>
+                            <label for="pymnt_type_2">Payment Type 2</label>
+                            <input type="radio" name="payment_type" id="pymnt_type_2">
+                        </div>
+                    </form>
+                    <form class="card_numbers_group">
+                        <div class="card_numbers">
+                            <div class="crd_nmbr">
+                                <label for="crd_nmbr">Card Numer</label>
+                                <input  type="number" id="crd_nmbr" placeholder="####-####-####">
+                            </div>
+                            <div class="cvv">
+                                <label for="cvv">CVV</label>
+                                <input type="number" id="cvv" placeholder="###">
+                            </div>
+                        </div>
+                        <div class="card_expiration">
+                            <label for="expire_yy">Expires</label>
+                            <div>
+                                <input type="number" id="expire_yy" placeholder="yy">
+                        
+                                <label for="expire_mm">/</label>
+                                <input type="number" id="expire_mm" placeholder="mm">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="submit_section">
+                        <button>Submit</button>
                     </div>
-                </form>
-                <div class="submit_section">
-                    <button>Submit</button>
-                </div>
-            </fieldset>
+                </fieldset>
+            </div>  
         </div>
     </div>
     <footer>

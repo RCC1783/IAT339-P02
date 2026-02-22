@@ -21,10 +21,6 @@ body {
     /* background-color: #F5F3EF; */
 }
 
-.productPageBody {
-    display: block;
-}
-
 /* NEW SECTION */
 section, footer {
     margin: 1.5rem;
@@ -33,7 +29,7 @@ section, footer {
 .page_main_content{
     display: flex;
     flex-direction: column;
-    margin: 2.5rem 8rem;
+    margin: 2.5rem 4rem;
     max-width: 100rem;
 }
 
@@ -46,7 +42,7 @@ section, footer {
 }
 
 hr {
-  height: 2px;
+  height: 3px;
   border-width: 0px;
   color: var(--colour1);
   background-color: var(--colour1);
@@ -368,12 +364,6 @@ header {
     min-width: 1rem;
 }
 
-/*NEW Shop HR & Shop Footer */
-
-.category_divider {
-    margin: 2rem;
-}
-
 footer {
     background-color: var(--colour1);
     color: #f4f3f0;
@@ -393,10 +383,10 @@ footer {
     align-items: flex-start;
     gap: 48px;
 
-    max-width: 130rem;
-    width: 100rem;
+    width: 80%;
+    /* width: 100%; */
     margin: 0 auto;
-    padding: 1rem 5rem;
+    padding: 1rem 4.24rem;
     height: fit-content;
 }
 
@@ -413,6 +403,7 @@ footer {
     display: flex;
     justify-content: center;
 
+    width: 100vw;
     position: sticky;
     top: 0;
 
@@ -724,10 +715,10 @@ footer {
 .cart_item{
     display: flex;
     flex-direction: row;
-    width: 25rem;
+    max-width: 25rem;
     height: 6rem;
     justify-content: start;
-    align-content: center;
+    align-items: center;
     margin: 10px;
 
     position: relative;
@@ -756,7 +747,8 @@ footer {
 .cart_item form{
     box-sizing: border-box;
     max-width: 100%;
-    margin: 0.5rem 5px 0 5px;
+    height: fit-content;
+    margin: 0.5rem 5px;
     padding: 0;
 
     align-items: center;
@@ -829,7 +821,7 @@ footer {
     flex-direction: column;
     align-items: center;
 
-    height: 30rem;
+    height: 35rem;
     overflow-y: scroll;
 
 
@@ -843,11 +835,12 @@ footer {
     background-color: var(--colour1);
     border-top: solid 3px var(--colour2);
     color: white;
-    height: 100%;
+    height: fit-content;
     margin: 0;
-    padding: .5rem 2rem;
+    padding: 1rem 2rem;
 
     display: flex;
+    flex-wrap: wrap;
 
     font-family: "Arima";
     font-size: 1.5rem;
@@ -884,7 +877,7 @@ footer {
 /*  /////   Page Layout Template Classes  ///// */
 /*  /////////////////////////////////////////// */
 
-#products_container{
+.products_container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -918,7 +911,9 @@ footer {
 .flex_row_generic{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
@@ -928,6 +923,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 2rem 0;
+    justify-content: center;
 }
 
 .col{
@@ -987,6 +983,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 2rem;
+    max-width: 80%;
 }
 .center_all_col h3{
     text-align: center;
