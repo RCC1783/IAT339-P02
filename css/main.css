@@ -222,7 +222,6 @@ button{
     max-width: 12rem;
     padding: 0.5rem 1rem;
 
-    text-justify: center;
     text-align: center;
 
     background-color: white;
@@ -287,7 +286,6 @@ button:hover{
     max-width: 12rem;
     padding: 0.5rem 1rem;
 
-    text-justify: center;
     text-align: center;
 
     background-color: white;
