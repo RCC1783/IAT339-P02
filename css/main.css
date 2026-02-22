@@ -37,11 +37,20 @@ section, footer {
     max-width: 100rem;
 }
 
+.callout{
+    padding: 1rem 3rem;
+
+    max-width: 100%;
+    border: solid 2px var(--colour1);
+    border-radius: 5px;
+}
+
 hr {
   height: 2px;
   border-width: 0px;
   color: var(--colour1);
   background-color: var(--colour1);
+  width: 100%;
 }
 
 .userReview {
@@ -366,8 +375,13 @@ header {
 footer {
     background-color: var(--colour1);
     color: #f4f3f0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
     margin: 0;
-    padding: 1rem;
+    /* padding: 2rem; */
+    width: 100%;
 }
 
 .nav_footer{
@@ -377,6 +391,10 @@ footer {
     align-items: flex-start;
     gap: 48px;
 
+    max-width: 100rem;
+    width: 100rem;
+    margin: 0 auto;
+    padding: 1rem 5rem;
     height: fit-content;
 }
 
@@ -902,9 +920,33 @@ footer {
 }
 
 .home_banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
     background-color: #002A32;
     min-width: 100%;
     height: 35vh;
+}
+
+.tmp_banner{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    max-width: 90rem;
+    height: 33vh;
+    max-height: 33vh;
+    padding: 2rem;
+
+    background-color: #E07F00;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #000;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 /* ///////////////////////////////////////////////////////////////// */
 /* ///                    Product Detailed View                  /// */
