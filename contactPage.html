@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Google font connections so the fonts I plan on using are visible -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Barrio&family=Darumadrop+One&display=swap" rel="stylesheet">
+</head>
+<!-- got rid of 'productPageBody' and class because there was already a generic that could be used -->
+<body>
+    <header>
+        <nav class="nav_header">
+            <a href="./index.html" class="store_logotype">Dungeoner's</a>
+            <div class="expander"></div>
+            <div class="search-bar">
+                <input type="text" id="product_search" placeholder="Search">
+                <button class="search-bar_button">Search</button>
+            </div>
+            <div class="header_links">
+                <a class= "nav_button" href="./productPage.html">Shop Categories</a>
+                <a class= "nav_button" href="./checkoutPage.html">Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Navigator Stuff-->
+    <div class = "page_main_content">
+        <h2>Contact Us</h2>
+        <h3>Have a Question?</h3>
+        <form class="contact_form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class = "faq">
+        <h3>Frequently Asked Questions</h3>
+        <h4>Q: How long does shipping take?</h4>
+        <p>A: We do not currently offer shipping. Please pick up your order in person, you can locate our shops in kingdoms with a Adventurer's Guild.</p>
+        <h4>Q: Can I return an item?</h4>
+        <p>A: Unless it has suffered significant damage (i.e. melted by slime, broken by metal eaters, etc.), you are free to return it for some gold.</p>
+    </div>
+    
+    <footer>
+        <div class = 'nav_footer'>
+            <div class = 'nav_footer_section'>
+                <h4>Help & Contact</h4>
+                <a href="./contactPage.html">Contact Us</a>
+            </div>
+            <div class = 'nav_footer_section'>
+                <h4>About Us</h4>
+                <a href="./index.html">Our Story</a>
+                <a href="./Joshua Ma/shop.html">Visit our Trusted Smiths!</a>
+            </div>
+        </div>
+        <div class="nav_footer">
+            <div>
+                <h4>Fonts</h4>
+                <p>Gama, N., Correia, J., Wagner, R.. (2020). Arima [Font]. https://fonts.google.com/specimen/Arima?query=Natanael+Gama</p>
+                <p>Maniackers Design. (2020). Darumadrop One [Font]. https://fonts.google.com/specimen/Darumadrop+One/license?query=Natanael+Gama</p>
+                <p>Omnibus-Type. (2016). Barrio [Font]https://fonts.google.com/specimen/Barrio?query=Natanael+Gama</p>
+                <h4>Images</h4>
+                <p>Clifford Roan. (2026). Crystal Sword [Digital Illustration].</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

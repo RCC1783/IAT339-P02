@@ -86,13 +86,17 @@ hr {
     border: solid 1px var(--colour3);
 }
 
-.review .topPart {
+.review .topPart, .bottomPart {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--colour3);
     color: white;
     padding: 0.5rem;
+}
+
+.bottomPart {
+    background-color: var(--colour1);
 }
 
 .topPart .userInfo {
@@ -1026,6 +1030,30 @@ footer {
     /* min-width: 2px; */
 }
 
+/* ///      CONTACT PAGE     ////*/
+
+.contact_form, .faq {
+    display: flex;
+    flex-direction: column;
+
+    width: 700px;
+    max-width: 30rem;
+    padding: 1rem;
+
+    background-color: #fff1d3;
+    border-radius: 10px;
+    border: solid 2px var(--colour3);
+}
+
+.faq {
+    margin: 2rem;
+    background-color: var(--colour2);
+    border: none;
+}
+
+.contact_form button {
+    margin-top: 1rem;
+}
 
 /* ///////////////////////////////////////////////////////////////// */
 /* ///             Media Queries for responsiveness              /// */
