@@ -1124,6 +1124,12 @@ footer {
 /* ///             Media Queries for responsiveness              /// */
 /* ///////////////////////////////////////////////////////////////// */
 
+@media screen and (max-width: 1085px) {
+    .nav_header {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width:910px){
 
     .two_col_right_dominant{
