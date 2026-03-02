@@ -177,7 +177,7 @@ p, ol, ul{
 
 /* ///      Default/in-text link     ////*/
 a {
-    color: var(--colour4);
+    color: rgb(142, 95, 216);
     text-decoration: none;
     font-weight: 550;
     transition: color 0.25s;
@@ -388,6 +388,7 @@ footer {
     width: 80%;
     /* width: 100%; */
     margin: 0 auto;
+    margin-bottom: 1rem;
     padding: 1rem 4.24rem;
     height: fit-content;
 }
