@@ -37,14 +37,12 @@
                     <div class="cart">
                         <div class="cart_item">
                             <div class="cart_display">
-                                <img src="images/crystal_sword.png" alt="">
+                                <img src="images/crystal_sword_2x.png" alt="crystal sword">
                                 <button class="remove_from_cart_button">-</button>
                             </div>
-                            <div class="flex_cols_container">
-                                <div class="product_info">
-                                    <p class="product_name">Crystal Sword</p>
-                                    <p class="product_price">$199.99</p>
-                                </div>
+                            <div class="cart_item_info">
+                                <p class="product_name">Crystal Sword</p>
+                                <p class="product_price">$199.99</p>
                                 <form>
                                     <label for="item_qty">Quantity</label>
                                     <input type="number" id="item_qty">
@@ -53,14 +51,12 @@
                         </div>
                         <div class="cart_item">
                             <div class="cart_display">
-                                <img src="images/potion.png" alt="">
+                                <img src="images/potion_2x.png" alt="potion">
                                 <button class="remove_from_cart_button">-</button>
                             </div>
-                            <div class="flex_cols_container">
-                                <div class="product_info">
-                                    <p class="product_name">Potion</p>
-                                    <p class="product_price">$9.99</p>
-                                </div>
+                            <div class="cart_item_info">
+                                <p class="product_name">Potion</p>
+                                <p class="product_price">$9.99</p>
                                 <form>
                                     <label for="item_qty2">Quantity</label>
                                     <input type="number" id="item_qty2">
@@ -78,8 +74,8 @@
                 </div>
             </div>
             
-            <div class="two_col_right_dominant">
-                <section class="col_wide">
+            <div class="col_wide">
+                <section >
                     <div>
                         <h2>Checkout</h2>
                         <h3>Notice:</h3>
@@ -92,15 +88,15 @@
                         <label for="crd_name">Cardholder Name</label>
                         <input type="text" id="crd_name" placeholder="J Doe">
                     </form>
-                    <form class="payment_type">
-                        <div>
+                    <form class="payment_types">
+                        <div class="pay_type">
                             <label for="pymnt_type_1">Payment Type 1</label>
                             <input type="radio" name="payment_type" id="pymnt_type_1">
                         </div>
                         
                         <div class="spacer"></div>
                         
-                        <div>
+                        <div class="pay_type">
                             <label for="pymnt_type_2">Payment Type 2</label>
                             <input type="radio" name="payment_type" id="pymnt_type_2">
                         </div>
@@ -120,7 +116,6 @@
                             <label for="expire_yy">Expires</label>
                             <div>
                                 <input type="number" id="expire_yy" placeholder="yy">
-                        
                                 <label for="expire_mm">/</label>
                                 <input type="number" id="expire_mm" placeholder="mm">
                             </div>

@@ -12,7 +12,7 @@
 body {
     font-family:'Arima','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    width: 100%;
+    width: 100vw;
 
     display: flex;
     flex-direction: column;
@@ -564,7 +564,6 @@ footer {
     margin: 0 1rem 0 0;
 }
 .product_price{
-    text-align: right;
     font-weight: 500;
     margin: 0;
 }
@@ -604,51 +603,58 @@ footer {
 
 /* ///      Payment Form     ////*/
 .payment_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     background-color: white;
     border: none;
     border-radius: 10px;
     overflow: hidden;
     padding: 0;
     border: solid 2px var(--colour3);
+
+    width: 80%;
     max-width: 40rem;
-    min-width: 30rem;
 
     margin: auto 0;
-
-    display: flex;
-    flex-direction: column;
 }
 .payment_form form{
-    margin: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
 .cardholder{
-    max-width: 100%;
-    min-width: 0;
+    width: 90%;
     border-radius: 0;
 
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 .cardholder input{
-    flex-grow: 1;
-    min-width: 1px;
+    flex: 2;
+    width: 90%;
     font-size: 1rem;
 }
 .cardholder label{
     max-width: 100%;
     margin-left: 0;
 }
-.payment_type{
+.payment_types{
     display: flex;
     flex-wrap: wrap;
+    width: 70%;
     justify-content: center;
 }
-.payment_type label{
+.pay_type{
+    width: fit-content;;
+}
+.pay_type label{
     margin-left: 0;
 }
-.payment_type input{
+.pay_type input{
     margin-right: 0;
 }
 .spacer{
@@ -659,41 +665,73 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-grow: 1;
+    width: 90%;
 }
 
 .card_numbers{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    justify-content: start;
 }
 .crd_nmbr{
     display: flex;
-    flex-grow: 1;
-    text-align: center;
+    flex: 2.5;
+    /* text-align: center; */
+    justify-content: start;
+    min-width: fit-content;
+    flex-wrap: wrap;
 }
 
 .crd_nmbr label{
     margin-left: 0;
+    min-width: fit-content;
 }
 
 .crd_nmbr input{
-    flex-grow: 1;
-    max-width: none;
+    flex:1;
+    min-width: 100px;
 }
 
+.cvv{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 10rem;
+}
+
+.cvv label{
+    margin-left: 0;
+    min-width: fit-content;
+}
 .cvv input{
-    max-width: 5rem;
+    flex:1;
+    min-width: 100px;
 }
 
 .card_expiration{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: right;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    align-items: flex-end;
+
+    width: fit-content;
     margin-top: 1rem;
+
+    gap:10px;
+}
+
+.card_expiration div{
+    max-width: 100%;
+    width: fit-content;
+    min-width: 80px;
 }
 
 .card_expiration label{
-    margin: 0 0.3rem;
+    margin: 0;
+    min-width: fit-content;
 }
 .card_expiration input{
     max-width: 4rem;
@@ -702,11 +740,12 @@ footer {
 
 .submit_section{
     background-color: var(--colour3);
-    padding: 1rem;
+    width: 100%;
     border-radius: 0;
 }
 .submit_section button{
-    min-width: 20%;
+    width: 10rem;
+    margin: 1rem;
 }
 
 /*  //////////////////////////////////////////// */
@@ -717,20 +756,24 @@ footer {
 .cart_item{
     display: flex;
     flex-direction: row;
-    max-width: 25rem;
-    height: 6rem;
-    justify-content: start;
+    width: 90%;
+    max-width: 90%;
+    height: fit-content;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 8px;
 
     position: relative;
 
     background-color: white;
-    padding: 0.5rem;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 10px;
+
+    gap: 20px;
 }
 
 .cart_item img{
+    width: 100%;
     height: 100%;
     background-color: #898989;
     object-fit: cover;
@@ -742,29 +785,38 @@ footer {
     flex-direction: column;
 
     justify-content: center;
-    flex-grow: 1;
-    margin: 0 1rem;
+    flex: 1;
 }
 
-.cart_item form{
+.cart_item_info p{
+    width: 90%;
+    max-width: fit-content;
+}
+
+.cart_item_info form{
+    display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
-    max-width: 100%;
+    width: 90%;
     height: fit-content;
-    margin: 0.5rem 5px;
+    margin: 0.5rem 0;
     padding: 0;
 
-    align-items: center;
+    gap: 10px;
 
     border-radius: 0;
 }
 
-.cart_item form label{
-    flex: 2;
+.cart_item_info label{
     max-height: 1.5rem;
+    margin: 0;
+    width: fit-content;
 }
 
-.cart_item form input{
-    max-width: 40%;
+.cart_item_info input{
+    flex: 1;
+    width: 100%;
+    min-width: 100px;
     max-height: 1.5rem;
     margin: 0;
     box-sizing: border-box;
@@ -773,8 +825,9 @@ footer {
 
 .cart_display{
     position: relative;
-    max-width: 100%;
-    height: 100%;
+    flex:1;
+    max-width: 6rem;
+    max-height: 6rem;
 }
 
 .remove_from_cart_button{
@@ -792,8 +845,8 @@ footer {
     text-align: center;
 
     position: absolute;
-    top: -15px;
-    left:-15px;
+    top: -10px;
+    left:-10px;
 
     transition: filter 0.05s;
 }
@@ -815,6 +868,8 @@ footer {
 
     overflow: hidden;
 
+    min-width: 15rem;
+    width: 100%;
     max-width: 30rem;
 }
 
@@ -824,6 +879,7 @@ footer {
     align-items: center;
 
     height: 35rem;
+    max-width: 100%;
     overflow-y: scroll;
 
 
@@ -885,6 +941,7 @@ footer {
     flex-wrap: wrap;
 
     max-width: 59rem;
+    width: 90%;
 
     justify-content: center;
 }
@@ -924,6 +981,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 100%;
     margin: 2rem 0;
     justify-content: center;
 }
@@ -946,7 +1004,14 @@ footer {
     align-items: center;
     justify-content: center;
 
-    min-width: 25rem;
+    min-width: 50%;
+}
+
+.col_vert_dividers{
+    border-left: 3px solid var(--colour1);
+    border-right: 3px solid var(--colour1);
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .home_banner{
@@ -1076,16 +1141,22 @@ footer {
         max-width: 100%;
     }
 
-    .payment_form{
+    /* .payment_form{
         min-width: 0;
     }
 
     .card_numbers{
         flex-wrap: wrap;
-    }
+    } */
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+    .nav_header{
+        flex-direction: column;
+    }
+    .store_logotype{
+        margin: 0;
+    }
     .nav_header .expander{
         display: none;
     }
@@ -1093,8 +1164,9 @@ footer {
         justify-content: center;
     }
     .search-bar{
-        max-width: 100%;
-        min-width: 0;
+        width: 90%;
+        max-width: 400px;
+        min-width: 200px;
         flex-grow: 1;
         margin: 1rem 0;
     }
@@ -1110,7 +1182,28 @@ footer {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
+    
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p, a{
+        font-size: 0.85rem;
+    }
+
+    label{
+        font-size: 0.85rem;
+    }
+    input{
+        font-size: 0.85rem;
+    }
+
+    .store_logotype{
+        font-size: 2rem;
+    }
+
     .product_listing{
         width: 8rem;
         min-width: 2rem;
@@ -1137,21 +1230,6 @@ footer {
         font-size: 0.75rem;
     }
 
-    h2{
-        font-size: 2rem;
-    }
-
-    p, a{
-        font-size: 0.85rem;
-    }
-
-    label{
-        font-size: 0.85rem;
-    }
-    input{
-        font-size: 0.85rem;
-    }
-
     .checkout_total_text p{
         font-size: 1.15rem;
     }
@@ -1159,17 +1237,22 @@ footer {
     .checkout_total button{
         font-size: 0.8rem;
     }
-}
 
-@media screen and (max-width: 600px) {
-    body{
-        margin-left: 0rem;
-        margin-right: 0rem;
+    .page_main_content{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .nav_footer{
+        padding-left: 1.5rem;
+    }
+
+    .spacer{
+        display: none;
     }
 }
 
 @media screen and (max-width: 485px){
-    .payment_type{
+    /* .payment_type{
         flex-direction: column;
         align-items: center;
     }
@@ -1184,15 +1267,12 @@ footer {
     .crd_nmbr{
         max-width: none;
         flex-grow: 1;
-    }
-    .crd_nmbr input{
-        max-width: none;
-    }
+    } */
 }
 @media screen and (max-width: 350px){
-    .card_expiration{
+    /* .card_expiration{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 }

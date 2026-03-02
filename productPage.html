@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Barrio&family=Darumadrop+One&display=swap" rel="stylesheet">
 </head>
-<!-- got rid of 'productPageBody' and class because there was already a generic that could be used -->
+
 <body>
     <header>
         <nav class="nav_header">
@@ -37,9 +37,9 @@
     </nav>
     
     <div class="page_main_content">
-        <hr> <!-- Got rid of custom class bc use of 'page_main_content' removed the need -->
-        <div class="two_col_right_dominant" id = 'basicWeaponry'>
-            <section class="two_col_right_dom_left_box">
+        <hr>
+        <div class="flex_cols_container" id = 'basicWeaponry'>
+            <section class="col">
                 <h2>Dungeon Basics</h2>
                 <p>For those starting off, or just seeking a run of the mill tool that gets the job done.</p>
             </section>
@@ -128,11 +128,10 @@
             </div>
         </div>
 
-        <!-- Got rid of custom class bc use of 'page_main_content' removed the need -->
         <hr> 
 
-        <div class="two_col_right_dominant" id = 'magicalWeaponry'>
-            <section class="two_col_right_dom_left_box">
+        <div class="flex_cols_container" id = 'magicalWeaponry'>
+            <section class="col">
                 <h2>Magical Weapons</h2>
                 <p>Perfect for dangerous dungeons, these weapons are enchanted by our finest magicians.</p>
             </section>
