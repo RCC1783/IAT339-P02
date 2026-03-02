@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View Template</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Google font connections so the fonts I plan on using are visible -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Barrio&family=Darumadrop+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav_header">
+            <a href="./index.html" class="store_logotype">Dungeoner's</a>
+            <div class="expander"></div>
+            <div class="search-bar">
+                <input type="text" id="product_search" placeholder="Search">
+                <button class="search-bar_button">Search</button>
+            </div>
+            <div class="header_links">
+                <a class= "nav_button" href="./productPage.html">Shop Categories</a>
+                <a class= "nav_button" href="./checkoutPage.html">Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page_main_content">
+        <div class="flex_cols_container">
+            <div class="col">
+                <div class="detailed_product_images">
+                    <img class="primary_product_image" src="./images/potion_2x.png" srcset="./images/potion_4x.png 4x, ./images/potion_3x.png 3x, ./images/potion_2x.png 2x, ./images/potion_1x.png 1x" alt="potion">
+                    <div class="additional_images_container">
+                        <img src="images/potion_2x.png" srcset="/images/potion_3x.png 3x, /images/potion_2x.png 2x, /images/potion_1x.png 1x" alt="potion">
+                        <img src="images/potion_2x.png" srcset="/images/potion_3x.png 3x, /images/potion_2x.png 2x, /images/potion_1x.png 1x" alt="potion">
+                        <img src="images/potion_2x.png" srcset="/images/potion_3x.png 3x, /images/potion_2x.png 2x, /images/potion_1x.png 1x" alt="potion">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col_wide">
+                <div class="flex_row_generic">
+                    <!-- <div class="vrt_bar"> </div> -->
+                    <div class="center_all_col col_vert_dividers">
+                        <h2>Regular Potion</h2>
+                        <p>Our potions are brewed daily by our resident alchemist with each batch tested before bottling to ensure a satisfactory product.</p>
+                        <p>These regular potions brewed with standard quality ingredients are perfect for light activities or just to top up your health. For more durastic healing needs, we recomend one of our higher grade potions.</p>
+                    </div>
+                    <!-- <div class="vrt_bar"> </div> -->
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="center_all_col">
+                    <h3>Purchase Options</h3>
+                    <form class="purchase_options_container">
+                        <div><p class="price">$1.99</p><label class="purchase_option"><input type="radio" id="op1" checked="checked" name="ex"><span>Single</span></label></div>
+                        <div><p class="price">$8.99</p><label class="purchase_option"><input type="radio" id="op2" name="ex"><span>5 Pack</span></label></div>
+                        <div><p class="price">$18.99</p><label class="purchase_option"><input type="radio" id="op3" name="ex"><span>10 Pack</span></label></div>
+                        <div><p class="price">$35.99</p><label class="purchase_option"><input type="radio" id="op4" name="ex"><span>20 Pack</span></label></div>
+                    </form>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class = 'reviewSection'>
+            <h4><a href = '#'>7</a> Adventurers have given their recommendations!</h4>
+            
+            <!-- stuff for leaving your own review -->
+            <div class = 'userReview'>
+                <form id="recommendForm">
+                    <fieldset>
+                        <legend>Leave Your Thoughts</legend>
+                            <div class = 'recommendationSelect'>
+                                <label for = 'recommend'>Recommend?</label>  
+                                    <select id = 'recommend' name = 'recommendList' form = 'recommendForm'>
+                                        <option value = 'default' selected disabled>Choose an option</option>
+                                        <option value = 'yes'>Recommend!</option>
+                                        <option value = 'nay'>Don't Recommend!</option>
+                                    </select>
+                            </div>
+
+                            <div class = 'writeReview'>
+                                <p>Share your thoughts</p>
+                                <textarea id = 'review' placeholder = 'Write your thoughts here.'>
+                                </textarea>
+                            </div>
+
+                            <div class = 'submitReview'>
+                                <button>Submit</button>
+                            </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <hr>
+
+            <div>
+                <article class = 'review'> <!--previous reviews | should require an account | verified dungeon completion number from a guild | if or not you recommend it | text of their review -->
+                    <div class = 'topPart'>
+                        <div class = 'userInfo'>
+                            <h4>squireLifer4</h4>
+                            <p>| 3 Dungeons Completed</p>
+                        </div>
+                        <h4 class = 'rating'>Not Recommended</h4>
+                    </div>
+                    <div class = 'reviewText'>
+                        <p>didn't even heal my cuts.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class = 'nav_footer'>
+            <div class = 'nav_footer_section'>
+                <h4>Help & Contact</h4>
+                <a href="./contactPage.html">Contact Us</a>
+            </div>
+            <div class = 'nav_footer_section'>
+                <h4>About Us</h4>
+                <a href="./index.html">Our Story</a>
+                <a href="./Joshua Ma/shop.html">Visit our Trusted Smiths!</a>
+            </div>
+        </div>
+        <div class="nav_footer">
+            <div>
+                <h4>Fonts</h4>
+                <p>Gama, N., Correia, J., Wagner, R.. (2020). Arima [Font]. https://fonts.google.com/specimen/Arima?query=Natanael+Gama</p>
+                <p>Maniackers Design. (2020). Darumadrop One [Font]. https://fonts.google.com/specimen/Darumadrop+One/license?query=Natanael+Gama</p>
+                <p>Omnibus-Type. (2016). Barrio [Font]https://fonts.google.com/specimen/Barrio?query=Natanael+Gama</p>
+                <h4>Images</h4>
+                <p>Clifford Roan. (2026). Potion [Digital Illustration].</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -12,7 +12,12 @@
 body {
     font-family:'Arima','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    max-width: 100%;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
     /* background-color: #F5F3EF; */
 }
 
@@ -21,12 +26,93 @@ section, footer {
     margin: 1.5rem;
 }
 
+.page_main_content{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem 4rem;
+    max-width: 100rem;
+}
+
+.callout{
+    padding: 1rem 3rem 2rem 3rem;
+
+    max-width: 100%;
+    border: solid 3px var(--colour3);
+    border-radius: 10px;
+}
+
 hr {
-  height: 2px;
+  height: 3px;
   border-width: 0px;
   color: var(--colour1);
   background-color: var(--colour1);
+  width: 100%;
 }
+
+.userReview {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.userReview fieldset {
+    border-radius: 5px;
+    border-color: var(--colour1);
+}
+
+.userReview .writeReview, .submitReview {
+    margin: 1rem;
+}
+
+.userReview textarea, select {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.userReview legend {
+    font-family: "Arima";
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.userReview p {
+    font-weight: 600;  
+}
+
+.review {
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    border: solid 1px var(--colour3);
+}
+
+.review .topPart, .bottomPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--colour3);
+    color: white;
+    padding: 0.5rem;
+}
+
+.bottomPart {
+    background-color: var(--colour1);
+}
+
+.topPart .userInfo {
+    display: flex;
+    align-items: center;    
+}
+
+.topPart p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.reviewText {
+    padding: 1rem;
+}
+
 
 /* NEW SECTION */
 
@@ -42,7 +128,7 @@ h1{
 h2{
     font-family: "Darumadrop One";
     font-size: 2.4rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     margin-top: 0.5rem;
 }
 
@@ -77,6 +163,10 @@ code{
     border-radius: 10px;
     box-sizing: border-box;
     padding: 0.75rem;
+}
+
+img{
+    max-width: max-content;
 }
 
 /* ///      Fit text to page     ////*/
@@ -124,20 +214,93 @@ input:hover, input:focus, input:active{
 }
 
 button{
+    align-content: center;
+
     border: none;
     border-radius: 10px;
 
     font-family: "Arima";
     font-weight: 600;
     font-size: .9rem;
-    padding: 0.5rem;
-    margin-left: .5rem;
+
+    max-width: 12rem;
+    padding: 0.5rem 1rem;
+
+    text-align: center;
 
     background-color: white;
     transition: background-color 0.25s, color 0.2s;
 }
 
 button:hover{
+    background-color: var(--colour4);
+    color: white;
+}
+
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+.purchase_options_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    text-align: center;
+}
+.purchase_options_container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 1rem 1rem;
+    min-width: fit-content;
+}
+.purchase_options_container .price{
+    font-weight: 700;
+}
+.purchase_option{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: fit-content;
+
+    margin: 0;
+
+    align-items: center;
+}
+.purchase_option input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.purchase_option span{
+    box-sizing: border-box;
+    align-content: center;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Arima";
+    font-weight: 600;
+    font-size: .9rem;
+
+    min-width: fit-content;
+    max-width: 12rem;
+    padding: 0.5rem 1rem;
+
+    text-align: center;
+
+    background-color: white;
+    transition: background-color 0.25s, border 0.2s, color 0.2s;
+}
+
+.purchase_option:hover input ~ span {
+    border: solid 2px var(--colour4);
+}
+
+.purchase_option input:checked ~ span {
     background-color: var(--colour4);
     color: white;
 }
@@ -179,25 +342,88 @@ button:hover{
 /* /////////////////////////////////////////////// */
 
 /* ///      Shop Header     ////*/
-header { /* NEW - Padding moved to the parent class. */ 
+header {
     background-color: var(--colour1);
     color: #f4f3f0;
     margin: 0;
-    padding: 1rem;
+    /* padding: 1rem; */
+
+    width: 100%;
 }
 
 .nav_header{
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
     align-items: center;
     height: fit-content;
-    /* padding: 1rem 0 1rem 0; */
+    padding: 1rem 3rem;
 }
 
 .nav_header .expander{
     flex-grow: 2;
     min-width: 1rem;
+}
+
+footer {
+    background-color: var(--colour1);
+    color: #f4f3f0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin: 0;
+    /* padding: 2rem; */
+    width: 100%;
+}
+
+.nav_footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+
+    width: 80%;
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 1rem 4.24rem;
+    height: fit-content;
+}
+
+.nav_footer_section{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+/* Store Nav */
+
+.nav_category {
+    background-color: var(--colour2);
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    position: sticky;
+    top: 0;
+
+    z-index: 999;
+}
+
+.nav_category a {
+    color: white;
+    background-color: var(--colour2);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+}
+
+.nav_category a:hover {
+    background-color: var(--colour4);
 }
 
 .store_logotype{
@@ -213,7 +439,7 @@ header { /* NEW - Padding moved to the parent class. */
 
 .search-bar{
     margin: 1rem;
-    min-width: 361px;
+    min-width: 400px;
     display: flex;
     flex-direction: row;
 }
@@ -225,7 +451,7 @@ header { /* NEW - Padding moved to the parent class. */
     max-width: 260px;
     height: 25px;
 
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     text-align: center;
     border: solid 2px white;
     background-color: #ffffff66;
@@ -244,7 +470,7 @@ header { /* NEW - Padding moved to the parent class. */
     /* width: 30px; */
     height: 25px;
     color: white;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     padding: 0 1rem;
 
     transition: background-color 0.5s, color 0.4s;
@@ -338,7 +564,6 @@ header { /* NEW - Padding moved to the parent class. */
     margin: 0 1rem 0 0;
 }
 .product_price{
-    text-align: right;
     font-weight: 500;
     margin: 0;
 }
@@ -358,56 +583,78 @@ header { /* NEW - Padding moved to the parent class. */
     color: white;
 }
 
+.out_stock_notif{
+    /* To center this: https://www.w3schools.com/howto/howto_css_image_text.asp */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+
+    /* If out of stock display: block. Otherwise, display: none*/
+    display: block;
+
+    background-color: var(--colour1);
+    color: white;
+}
+
 
 
 
 /* ///      Payment Form     ////*/
 .payment_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     background-color: white;
     border: none;
     border-radius: 10px;
     overflow: hidden;
     padding: 0;
     border: solid 2px var(--colour3);
+
+    width: 80%;
     max-width: 40rem;
-    min-width: 30rem;
 
     margin: auto 0;
-
-    display: flex;
-    flex-direction: column;
 }
 .payment_form form{
-    margin: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
 .cardholder{
-    max-width: 100%;
-    min-width: 0;
+    width: 90%;
     border-radius: 0;
 
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 .cardholder input{
-    flex-grow: 1;
-    min-width: 1px;
+    flex: 2;
+    width: 90%;
     font-size: 1rem;
 }
 .cardholder label{
     max-width: 100%;
     margin-left: 0;
 }
-.payment_type{
+.payment_types{
     display: flex;
     flex-wrap: wrap;
+    width: 70%;
     justify-content: center;
 }
-.payment_type label{
+.pay_type{
+    width: fit-content;;
+}
+.pay_type label{
     margin-left: 0;
 }
-.payment_type input{
+.pay_type input{
     margin-right: 0;
 }
 .spacer{
@@ -418,41 +665,73 @@ header { /* NEW - Padding moved to the parent class. */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-grow: 1;
+    width: 90%;
 }
 
 .card_numbers{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    justify-content: start;
 }
 .crd_nmbr{
     display: flex;
-    flex-grow: 1;
-    text-align: center;
+    flex: 2.5;
+    /* text-align: center; */
+    justify-content: start;
+    min-width: fit-content;
+    flex-wrap: wrap;
 }
 
 .crd_nmbr label{
     margin-left: 0;
+    min-width: fit-content;
 }
 
 .crd_nmbr input{
-    flex-grow: 1;
-    max-width: none;
+    flex:1;
+    min-width: 100px;
 }
 
+.cvv{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 10rem;
+}
+
+.cvv label{
+    margin-left: 0;
+    min-width: fit-content;
+}
 .cvv input{
-    max-width: 5rem;
+    flex:1;
+    min-width: 100px;
 }
 
 .card_expiration{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: right;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    align-items: flex-end;
+
+    width: fit-content;
     margin-top: 1rem;
+
+    gap:10px;
+}
+
+.card_expiration div{
+    max-width: 100%;
+    width: fit-content;
+    min-width: 80px;
 }
 
 .card_expiration label{
-    margin: 0 0.3rem;
+    margin: 0;
+    min-width: fit-content;
 }
 .card_expiration input{
     max-width: 4rem;
@@ -461,32 +740,40 @@ header { /* NEW - Padding moved to the parent class. */
 
 .submit_section{
     background-color: var(--colour3);
-    padding: 1rem;
+    width: 100%;
     border-radius: 0;
 }
 .submit_section button{
-    min-width: 20%;
+    width: 10rem;
+    margin: 1rem;
 }
 
+/*  //////////////////////////////////////////// */
+/*  /////           Product Cart          ///// */
+/*  /////////////////////////////////////////// */
 
 /* ///      Product Card in Checkout Cart     ////*/
 .cart_item{
     display: flex;
     flex-direction: row;
-    width: 25rem;
-    height: 6rem;
-    justify-content: start;
-    align-content: center;
-    margin: 10px;
+    width: 90%;
+    max-width: 90%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
 
     position: relative;
 
     background-color: white;
-    padding: 0.5rem;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 10px;
+
+    gap: 20px;
 }
 
 .cart_item img{
+    width: 100%;
     height: 100%;
     background-color: #898989;
     object-fit: cover;
@@ -498,28 +785,38 @@ header { /* NEW - Padding moved to the parent class. */
     flex-direction: column;
 
     justify-content: center;
-    flex-grow: 1;
-    margin: 0 1rem;
+    flex: 1;
 }
 
-.cart_item form{
+.cart_item_info p{
+    width: 90%;
+    max-width: fit-content;
+}
+
+.cart_item_info form{
+    display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
-    max-width: 100%;
-    margin: 0.5rem 5px 0 5px;
+    width: 90%;
+    height: fit-content;
+    margin: 0.5rem 0;
     padding: 0;
 
-    align-items: center;
+    gap: 10px;
 
     border-radius: 0;
 }
 
-.cart_item form label{
-    flex: 2;
+.cart_item_info label{
     max-height: 1.5rem;
+    margin: 0;
+    width: fit-content;
 }
 
-.cart_item form input{
-    max-width: 40%;
+.cart_item_info input{
+    flex: 1;
+    width: 100%;
+    min-width: 100px;
     max-height: 1.5rem;
     margin: 0;
     box-sizing: border-box;
@@ -528,8 +825,9 @@ header { /* NEW - Padding moved to the parent class. */
 
 .cart_display{
     position: relative;
-    max-width: 100%;
-    height: 100%;
+    flex:1;
+    max-width: 6rem;
+    max-height: 6rem;
 }
 
 .remove_from_cart_button{
@@ -547,8 +845,8 @@ header { /* NEW - Padding moved to the parent class. */
     text-align: center;
 
     position: absolute;
-    top: -15px;
-    left:-15px;
+    top: -10px;
+    left:-10px;
 
     transition: filter 0.05s;
 }
@@ -570,6 +868,8 @@ header { /* NEW - Padding moved to the parent class. */
 
     overflow: hidden;
 
+    min-width: 15rem;
+    width: 100%;
     max-width: 30rem;
 }
 
@@ -578,7 +878,8 @@ header { /* NEW - Padding moved to the parent class. */
     flex-direction: column;
     align-items: center;
 
-    height: 30rem;
+    height: 35rem;
+    max-width: 100%;
     overflow-y: scroll;
 
 
@@ -592,11 +893,12 @@ header { /* NEW - Padding moved to the parent class. */
     background-color: var(--colour1);
     border-top: solid 3px var(--colour2);
     color: white;
-    height: 100%;
+    height: fit-content;
     margin: 0;
-    padding: .5rem 2rem;
+    padding: 1rem 2rem;
 
     display: flex;
+    flex-wrap: wrap;
 
     font-family: "Arima";
     font-size: 1.5rem;
@@ -633,12 +935,13 @@ header { /* NEW - Padding moved to the parent class. */
 /*  /////   Page Layout Template Classes  ///// */
 /*  /////////////////////////////////////////// */
 
-#products_container{
+.products_container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
     max-width: 59rem;
+    width: 90%;
 
     justify-content: center;
 }
@@ -654,21 +957,189 @@ header { /* NEW - Padding moved to the parent class. */
     flex-grow: 1;
     min-width: 15rem;
 
+    max-width: 300px;
+
     margin-right: 1rem;
+
 }
 
 .two_col_right_dom_left_box p{
     max-width: 90%;
 }
 
-.checkout_section{
+.flex_row_generic{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.flex_cols_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1.5rem;
+    min-width: 15rem;
+
+    justify-content: center;
+}
+
+.col_wide{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 1.5rem;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 50%;
+}
+
+.col_vert_dividers{
+    border-left: 3px solid var(--colour1);
+    border-right: 3px solid var(--colour1);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.home_banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #002A32;
+    min-width: 100%;
+    height: fit-content;
+    padding: 1rem;
+}
+
+.tmp_banner{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    max-width: 800px;
+    max-height: 300px;
+    padding: 2rem;
+    aspect-ratio: 8/3;
+
+    background-color: #E07F00;
+    background-image: url("../images/HomePageBanner_1.webp");
+    background-size: cover;
+
+    border-radius: 15px;
+    box-shadow: 0 0 5px #000;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tmp_banner p{
+    font-family: "Darumadrop One";
+    font-size: 2rem;
+    max-width: 80%;
+    color: white;
+    text-shadow: 0 0 8px black;
+}
+
+.center_all_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    max-width: 80%;
+}
+.center_all_col h3{
+    text-align: center;
+}
+/* ///////////////////////////////////////////////////////////////// */
+/* ///                    Product Detailed View                  /// */
+/* ///////////////////////////////////////////////////////////////// */
+.detailed_product_images{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    align-items: center;
+}
+
+.primary_product_image{
+    min-width: 100%;
+    height: auto;
+
+    aspect-ratio: 1;
+}
+
+.additional_images_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 50%;
+    max-height: 75px;
+
+    overflow-x: scroll;
+}
+.additional_images_container img{
+    max-width: 100%;
+    margin: 0.5rem;
+}
+
+.vrt_bar{
+    border-left: solid 3px var(--colour1);
+    background-color: var(--colour1);
+    height: 100%;
+    /* min-width: 2px; */
+}
+
+/* ///      CONTACT PAGE     ////*/
+
+.contact_form, .faq {
+    display: flex;
+    flex-direction: column;
+
+    width: 700px;
+    max-width: 30rem;
+    padding: 1rem;
+
+    background-color: #fff1d3;
+    border-radius: 10px;
+    border: solid 2px var(--colour3);
+}
+
+.faq {
+    margin: 2rem;
+    background-color: var(--colour2);
+    border: none;
+}
+
+.contact_form button {
+    margin-top: 1rem;
 }
 
 /* ///////////////////////////////////////////////////////////////// */
 /* ///             Media Queries for responsiveness              /// */
 /* ///////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1085px) {
+    .nav_header {
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width:910px){
 
@@ -687,16 +1158,22 @@ header { /* NEW - Padding moved to the parent class. */
         max-width: 100%;
     }
 
-    .payment_form{
+    /* .payment_form{
         min-width: 0;
     }
 
     .card_numbers{
         flex-wrap: wrap;
-    }
+    } */
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+    .nav_header{
+        flex-direction: column;
+    }
+    .store_logotype{
+        margin: 0;
+    }
     .nav_header .expander{
         display: none;
     }
@@ -704,8 +1181,9 @@ header { /* NEW - Padding moved to the parent class. */
         justify-content: center;
     }
     .search-bar{
-        max-width: 100%;
-        min-width: 0;
+        width: 90%;
+        max-width: 400px;
+        min-width: 200px;
         flex-grow: 1;
         margin: 1rem 0;
     }
@@ -721,7 +1199,28 @@ header { /* NEW - Padding moved to the parent class. */
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
+    
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p, a{
+        font-size: 0.85rem;
+    }
+
+    label{
+        font-size: 0.85rem;
+    }
+    input{
+        font-size: 0.85rem;
+    }
+
+    .store_logotype{
+        font-size: 2rem;
+    }
+
     .product_listing{
         width: 8rem;
         min-width: 2rem;
@@ -748,21 +1247,6 @@ header { /* NEW - Padding moved to the parent class. */
         font-size: 0.75rem;
     }
 
-    h2{
-        font-size: 2rem;
-    }
-
-    p, a{
-        font-size: 0.85rem;
-    }
-
-    label{
-        font-size: 0.85rem;
-    }
-    input{
-        font-size: 0.85rem;
-    }
-
     .checkout_total_text p{
         font-size: 1.15rem;
     }
@@ -770,17 +1254,22 @@ header { /* NEW - Padding moved to the parent class. */
     .checkout_total button{
         font-size: 0.8rem;
     }
-}
 
-@media screen and (max-width: 600px) {
-    body{
-        margin-left: 0rem;
-        margin-right: 0rem;
+    .page_main_content{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .nav_footer{
+        padding-left: 1.5rem;
+    }
+
+    .spacer{
+        display: none;
     }
 }
 
 @media screen and (max-width: 485px){
-    .payment_type{
+    /* .payment_type{
         flex-direction: column;
         align-items: center;
     }
@@ -795,15 +1284,12 @@ header { /* NEW - Padding moved to the parent class. */
     .crd_nmbr{
         max-width: none;
         flex-grow: 1;
-    }
-    .crd_nmbr input{
-        max-width: none;
-    }
+    } */
 }
 @media screen and (max-width: 350px){
-    .card_expiration{
+    /* .card_expiration{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 }
