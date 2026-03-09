@@ -136,7 +136,7 @@
                 <section>
                     <hr>
                     <h3>Image as a link</h3>
-                    <a href="#"><img class="glow_on_hover" src="images/potion.png" alt="" width="200"></a>
+                    <a href="#"><img class="glow_on_hover" src="images/potion_1x.png" alt="" width="200"></a>
                     <h4>Sample Code</h4>
                     <code>
                         &lt;a href="#"&gt;&lt;img class="glow_on_hover" src="images/potion.png" alt="" width="200"&gt;&lt;/a&gt;
@@ -257,15 +257,15 @@
                             <label for="crd_name">Cardholder Name</label>
                             <input type="text" id="crd_name" placeholder="J Doe">
                         </form>
-                        <form class="payment_type">
-                            <div>
+                        <form class="payment_types">
+                            <div class="pay_type">
                                 <label for="pymnt_type_1">Payment Type 1</label>
                                 <input type="radio" name="payment_type" id="pymnt_type_1">
                             </div>
                             
                             <div class="spacer"></div>
                             
-                            <div>
+                            <div class="pay_type">
                                 <label for="pymnt_type_2">Payment Type 2</label>
                                 <input type="radio" name="payment_type" id="pymnt_type_2">
                             </div>
@@ -285,7 +285,6 @@
                                 <label for="expire_yy">Expires</label>
                                 <div>
                                     <input type="number" id="expire_yy" placeholder="yy">
-                            
                                     <label for="expire_mm">/</label>
                                     <input type="number" id="expire_mm" placeholder="mm">
                                 </div>
@@ -302,44 +301,43 @@
                                 &lt;label for="crd_name">Cardholder Name&lt;/label><br>
                                 &lt;input type="text" id="crd_name" placeholder="J Doe"><br>
                             &lt;/form><br>
-                            &lt;form class="payment_type"><br>
-                                &lt;div><br>
+                            &lt;form class="payment_types"><br>
+                                &lt;div class="pay_type"><br>
                                     &lt;label for="pymnt_type_1">Payment Type 1&lt;/label><br>
                                     &lt;input type="radio" name="payment_type" id="pymnt_type_1"><br>
                                 &lt;/div><br>
-                                
-                                &lt;div class="spacer">&lt;/div><br>
-                                
-                                &lt;div><br>
+                                <br>
+                                &lt;div class="spacer">&lt;/div>
+                                <br>
+                                &lt;div class="pay_type"><br>
                                     &lt;label for="pymnt_type_2">Payment Type 2&lt;/label><br>
-                                    &lt;input type="radio" name="payment_type" id="pymnt_type_2"><br>
+                                    &lt;input type="radio" name="payment_type" id="pymnt_type_2"> <br>
                                 &lt;/div><br>
                             &lt;/form><br>
                             &lt;form class="card_numbers_group"><br>
-                                &lt;div class="card_numbers"><br>
-                                    &lt;div class="crd_nmbr"><br>
-                                        &lt;label for="crd_nmbr">Card Numer&lt;/label><br>
-                                        &lt;input  type="number" id="crd_nmbr" placeholder="####-####-####"><br>
-                                    &lt;/div><br>
-                                    &lt;div class="cvv"><br>
-                                        &lt;label for="cvv">CVV&lt;/label><br>
-                                        &lt;input type="number" id="cvv" placeholder="###"><br>
-                                    &lt;/div><br>
-                                &lt;/div><br>
-                                &lt;div class="card_expiration"><br>
-                                    &lt;label for="expire_yy">Expires&lt;/label><br>
-                                    &lt;div>
-                                        &lt;input type="number" id="expire_yy" placeholder="yy"><br>
-                                
-                                        &lt;label for="expire_mm">/&lt;/label><br>
-                                        &lt;input type="number" id="expire_mm" placeholder="mm"><br>
-                                    &lt;/div><br>
-                                &lt;/div><br>
-                            &lt;/form><br>
-                            &lt;div class="submit_section"><br>
-                                &lt;button>Submit&lt;/button><br>
-                            &lt;/div><br>
-                        &lt;/fieldset>
+                                &lt;div class="card_numbers"> <br>
+                                    &lt;div class="crd_nmbr"> <br>
+                                        &lt;label for="crd_nmbr">Card Numer&lt;/label> <br>
+                                        &lt;input  type="number" id="crd_nmbr" placeholder="####-####-####"> <br>
+                                    &lt;/div> <br>
+                                    &lt;div class="cvv"> <br>
+                                        &lt;label for="cvv">CVV&lt;/label> <br>
+                                        &lt;input type="number" id="cvv" placeholder="###"> <br>
+                                    &lt;/div> <br>
+                                &lt;/div> <br>
+                                &lt;div class="card_expiration"> <br>
+                                    &lt;label for="expire_yy">Expires&lt;/label> <br>
+                                    &lt;div> <br>
+                                        &lt;input type="number" id="expire_yy" placeholder="yy"> <br>
+                                        &lt;label for="expire_mm">/&lt;/label> <br>
+                                        &lt;input type="number" id="expire_mm" placeholder="mm"> <br>
+                                    &lt;/div>  <br>
+                                &lt;/div> <br>
+                            &lt;/form> <br>
+                            &lt;div class="submit_section"> <br>
+                                &lt;button>Submit&lt;/button> <br>
+                            &lt;/div> <br>
+                        &lt;/fieldset> 
                     </code>
                     
                     <hr>
@@ -348,14 +346,12 @@
                         <div class="cart">
                             <div class="cart_item">
                                 <div class="cart_display">
-                                    <img src="images/crystal_sword.png" alt="">
+                                    <img src="images/crystal_sword_2x.png" alt="crystal sword">
                                     <button class="remove_from_cart_button">-</button>
                                 </div>
                                 <div class="cart_item_info">
-                                    <div class="product_info">
-                                        <p class="product_name">Crystal Sword</p>
-                                        <p class="product_price">$199.99</p>
-                                    </div>
+                                    <p class="product_name">Crystal Sword</p>
+                                    <p class="product_price">$199.99</p>
                                     <form>
                                         <label for="item_qty">Quantity</label>
                                         <input type="number" id="item_qty">
@@ -364,17 +360,15 @@
                             </div>
                             <div class="cart_item">
                                 <div class="cart_display">
-                                    <img src="images/potion.png" alt="">
+                                    <img src="images/potion_2x.png" alt="potion">
                                     <button class="remove_from_cart_button">-</button>
                                 </div>
                                 <div class="cart_item_info">
-                                    <div class="product_info">
-                                        <p class="product_name">Potion</p>
-                                        <p class="product_price">$9.99</p>
-                                    </div>
+                                    <p class="product_name">Potion</p>
+                                    <p class="product_price">$9.99</p>
                                     <form>
-                                        <label for="item_qty">Quantity</label>
-                                        <input type="number" id="item_qty">
+                                        <label for="item_qty2">Quantity</label>
+                                        <input type="number" id="item_qty2">
                                     </form>
                                 </div>
                             </div>
@@ -388,47 +382,46 @@
                         </div>
                     </div>
                     <h4>Code</h4>
-                    <p>(CODE DOES NOT MATCH REAL CODE ATM)</p>
                     <code>
                         &lt;div class="checkout_cart"> <br>
                             &lt;div class="cart"> <br>
                                 &lt;div class="cart_item"> <br>
                                     &lt;div class="cart_display"> <br>
-                                        &lt;img src="images/crystal_sword.png" alt=""> <br>
-                                        &lt;button class="remove_from_cart_button">-&lt;/button> <br>
-                                    &lt;/div> <br>
-                                    &lt;div class="product_info"> <br>
-                                        &lt;p class="product_name">Crystal Sword&lt;/p> <br>
-                                        &lt;p class="product_price">$199.99&lt;/p> <br>
-                                    &lt;/div> <br>
-                                    &lt;form> <br>
-                                        &lt;label for="item_qty">Quantity&lt;/label> <br>
-                                        &lt;input type="number" id="item_qty"> <br>
-                                    &lt;/form> <br>
-                                &lt;/div> <br>
-                                &lt;div class="cart_item"> <br>
-                                    &lt;div class="cart_display"> <br>
-                                        &lt;img src="images/potion.png" alt=""> <br>
-                                        &lt;button class="remove_from_cart_button">-&lt;/button> <br>
-                                    &lt;/div> <br>
-                                    &lt;div class="product_info"> <br>
-                                        &lt;p class="product_name">Potion&lt;/p> <br>
-                                        &lt;p class="product_price">$9.99&lt;/p> <br>
-                                    &lt;/div> <br>
-                                    &lt;form> <br>
-                                        &lt;label for="item_qty">Quantity&lt;/label> <br>
-                                        &lt;input type="number" id="item_qty"> <br>
-                                    &lt;/form> <br>
-                                &lt;/div> <br>
-                            &lt;/div> <br>
-                            &lt;div class="checkout_total"> <br>
-                                &lt;div class="checkout_total_text"> <br>
-                                    &lt;p>Total:&lt;/p> <br>
-                                    &lt;p>$209.98&lt;/p> &lt;!--would look different if functioning--&gt; <br>
-                                &lt;/div> <br>
-                                &lt;button>Checkout&lt;/button> <br>
-                            &lt;/div> <br>
-                        &lt;/div>
+                                        &lt;img src="images/crystal_sword_2x.png" alt="crystal sword"> <br>
+                                        &lt;button class="remove_from_cart_button">-&lt;/button><br>
+                                    &lt;/div><br>
+                                    &lt;div class="cart_item_info"><br>
+                                        &lt;p class="product_name">Crystal Sword&lt;/p><br>
+                                        &lt;p class="product_price">$199.99&lt;/p><br>
+                                        &lt;form><br>
+                                            &lt;label for="item_qty">Quantity&lt;/label><br>
+                                            &lt;input type="number" id="item_qty"><br>
+                                        &lt;/form><br>
+                                    &lt;/div><br>
+                                &lt;/div><br>
+                                &lt;div class="cart_item"><br>
+                                    &lt;div class="cart_display"><br>
+                                        &lt;img src="images/potion_2x.png" alt="potion"><br>
+                                        &lt;button class="remove_from_cart_button">-&lt;/button><br>
+                                    &lt;/div><br>
+                                    &lt;div class="cart_item_info"><br>
+                                        &lt;p class="product_name">Potion&lt;/p><br>
+                                        &lt;p class="product_price">$9.99&lt;/p><br>
+                                        &lt;form><br>
+                                            &lt;label for="item_qty2">Quantity&lt;/label><br>
+                                            &lt;input type="number" id="item_qty2"><br>
+                                        &lt;/form><br>
+                                    &lt;/div><br>
+                                &lt;/div><br>
+                            &lt;/div><br>
+                            &lt;div class="checkout_total"><br>
+                                &lt;div class="checkout_total_text"><br>
+                                    &lt;p>Total:&lt;/p><br>
+                                    &lt;p>$209.98&lt;/p> <br>
+                                &lt;/div><br>
+                                &lt;button>Checkout&lt;/button><br>
+                            &lt;/div><br>
+                        &lt;/div><br>
                     </code>
 
                     <hr>
@@ -527,8 +520,9 @@
                     <h4>Potential goods</h4>
                     <p>Dungeoner's sells all matter of items that could be used by someone venturing into dungeons or going on quests.</p>
 
-                    <img src="images/crystal_sword.png" alt="">
-                    <img src="images/potion.png" alt="">
+                    <img src="images/crystal_sword_2x.png" alt="Crystal Sword">
+                    <img src="images/potion_2x.png" alt="Potion">
+                    <img src="images/HomePageBanner_1.webp" alt="Banner showing potions">
                 </section>
 
             </section>
@@ -540,8 +534,9 @@
             <p>Maniackers Design. (2020). Darumadrop One [Font]. https://fonts.google.com/specimen/Darumadrop+One/license?query=Natanael+Gama</p>
             <p>Omnibus-Type. (2016). Barrio [Font]https://fonts.google.com/specimen/Barrio?query=Natanael+Gama</p>
             <h4>Images</h4>
-            <p>Clifford Roan. (2026). Crystal Sword [Digital Illustration].</p>
-            <p>Clifford Roan. (2026). Potion [Digital Illustration].</p>
+            <p>Clifford, R. (2026). Crystal Sword [Digital Illustration].</p>
+            <p>Clifford, R. (2026). Potion [Digital Illustration].</p>
+            <p>Clifford, R. (2026). Potion Sale Banner [Digital Illustration].</p>
         </footer>
     </body>
 </html>
