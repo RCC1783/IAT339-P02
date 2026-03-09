@@ -29,7 +29,7 @@ section, footer {
 .page_main_content{
     display: flex;
     flex-direction: column;
-    margin: 2.5rem 4rem;
+    padding: 2.5rem 4rem;
     max-width: 100rem;
 }
 
@@ -430,7 +430,7 @@ footer {
 .store_logotype{
     font-family: "Barrio";
     font-weight: 500;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     color: var(--colour2);
     margin-right: 2rem;
 }
@@ -1022,9 +1022,9 @@ footer {
     justify-content: center;
     
     background-color: #002A32;
-    min-width: 100%;
     height: fit-content;
-    padding: 1rem;
+    padding: 1rem 0;
+    width: 100%;
 }
 
 .tmp_banner{
@@ -1257,8 +1257,7 @@ footer {
     }
 
     .page_main_content{
-        margin-left: 1rem;
-        margin-right: 1rem;
+        padding: 2rem 2rem;
     }
     .nav_footer{
         padding-left: 1.5rem;
