@@ -1260,11 +1260,15 @@ footer {
         padding: 2rem 2rem;
     }
     .nav_footer{
-        padding-left: 1.5rem;
+        padding-left: 1.25rem;
     }
 
     .spacer{
         display: none;
+    }
+
+    .tmp_banner p{
+        font-size: 1.5rem;
     }
 }
 
